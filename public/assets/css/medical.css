@@ -1,0 +1,2325 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,500,700|Roboto:100,300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+@keyframes toLeftFromRight {
+  49% {
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+.app-medi-footer-widget .app-medi-contact-widget .cw-widget-btn, .medi-app-cta-form-wrap button, .medi-app-banner-text a {
+  color: #fff;
+  width: 225px;
+  height: 60px;
+  border: none;
+  margin-top: 20px;
+  font-weight: 700;
+  position: relative;
+  background-color: #e12454;
+  transition: 0.3s all ease-in-out;
+}
+.app-medi-footer-widget .app-medi-contact-widget .cw-widget-btn span, .medi-app-cta-form-wrap button span, .medi-app-banner-text a span {
+  top: 10px;
+  right: -20px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  line-height: 40px;
+  color: #e12454;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.04);
+}
+.app-medi-footer-widget .app-medi-contact-widget .cw-widget-btn:hover, .medi-app-cta-form-wrap button:hover, .medi-app-banner-text a:hover {
+  background-color: #223645;
+}
+.app-medi-footer-widget .app-medi-contact-widget .cw-widget-btn:hover span, .medi-app-cta-form-wrap button:hover span, .medi-app-banner-text a:hover span {
+  animation: toLeftFromRight 0.5s forwards;
+}
+@keyframes fadeFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeFromUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fadeFromUp {
+  animation-name: fadeFromUp;
+}
+
+.fadeFromRight {
+  animation-name: fadeFromRight;
+}
+
+.fadeFromLeft {
+  animation-name: fadeFromLeft;
+}
+
+/*global area*/
+/*----------------------------------------------------*/
+.app-medi {
+  margin: 0;
+  padding: 0;
+  color: #70808c;
+  font-size: 16px;
+  overflow-x: hidden;
+  line-height: 1.625;
+  font-family: "Roboto";
+  -moz-osx-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app-medi::selection {
+  color: #ffffff;
+  background-color: #6e3ebf;
+}
+
+.app-medi::-moz-selection {
+  color: #ffffff;
+  background-color: #6e3ebf;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.ul-li ul {
+  margin: 0;
+  padding: 0;
+}
+.ul-li ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.ul-li-block ul {
+  margin: 0;
+  padding: 0;
+}
+.ul-li-block ul li {
+  list-style: none;
+  display: block;
+}
+
+div#app-medi-preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background-color: #f1f2f3;
+  background: #fff url("../img/pre.svg") no-repeat center center;
+}
+
+[data-background] {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+.form-control:focus,
+button:visited,
+button.active,
+button:hover,
+button:focus,
+input:visited,
+input.active,
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus,
+a:hover,
+a:focus,
+a:visited,
+a.active,
+select,
+select:hover,
+select:focus,
+select:visited {
+  outline: none;
+  box-shadow: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.form-control {
+  box-shadow: none;
+}
+
+.pera-content p {
+  margin-bottom: 0;
+}
+@keyframes zooming {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.zooming {
+  animation: zooming 18s infinite both;
+}
+
+.app-medi-headline h1,
+.app-medi-headline h2,
+.app-medi-headline h3,
+.app-medi-headline h4,
+.app-medi-headline h5,
+.app-medi-headline h6 {
+  margin: 0;
+  font-family: "Poppins";
+}
+
+.app-medi-scrollup {
+  width: 55px;
+  right: 20px;
+  z-index: 5;
+  height: 55px;
+  bottom: 20px;
+  display: none;
+  position: fixed;
+  line-height: 55px;
+  border-radius: 100%;
+  background-color: #01e07b;
+}
+.app-medi-scrollup i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.medi-app-section-title {
+  z-index: 2;
+  padding-bottom: 60px;
+}
+.medi-app-section-title .title-watermark {
+  left: 0;
+  right: 0;
+  top: -60px;
+  z-index: -1;
+  line-height: 1;
+  color: #e9eff4;
+  font-weight: 600;
+  font-size: 200px;
+  font-family: "Poppins";
+}
+.medi-app-section-title .title-tag {
+  font-size: 14px;
+  font-weight: 700;
+  color: #e12454;
+  letter-spacing: 3px;
+}
+.medi-app-section-title h2 {
+  font-size: 48px;
+  padding-top: 5px;
+  font-weight: 600;
+  color: #223645;
+}
+
+.medi-app-background_overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/*---------------------------------------------------- */
+/*Header area*/
+/*----------------------------------------------------*/
+.medi-app-header-top {
+  padding: 6px 40px 8px;
+  background-color: #223645;
+}
+.medi-app-header-top .medi-app-header-top-social {
+  padding-right: 60px;
+}
+.medi-app-header-top .medi-app-header-top-social a {
+  margin-right: 12px;
+  transition: 0.3s all ease-in-out;
+}
+.medi-app-header-top .medi-app-header-top-social a:hover {
+  color: #e12454;
+}
+.medi-app-header-top .medi-app-header-top-login {
+  font-size: 14px;
+}
+.medi-app-header-top .medi-app-header-top-login .h-top-login {
+  color: #fff;
+  font-weight: 700;
+  margin-right: 5px;
+}
+.medi-app-header-top .medi-app-header-top-login .h-top-login i {
+  color: #e12454;
+  margin-right: 5px;
+}
+.medi-app-header-top .medi-app-header-top-contact {
+  padding-right: 70px;
+}
+.medi-app-header-top .medi-app-header-top-contact a {
+  font-size: 14px;
+  margin-right: 35px;
+}
+.medi-app-header-top .medi-app-header-top-contact a i {
+  color: #fff;
+  margin-right: 5px;
+}
+.medi-app-header-top .medi-app-header-top-language {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+.medi-app-header-top .medi-app-header-top-language:after {
+  top: 10px;
+  right: 22px;
+  color: #fff;
+  font-size: 14px;
+  content: "";
+  font-weight: 900;
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+}
+.medi-app-header-top .medi-app-header-top-language select {
+  color: #fff;
+  height: 40px;
+  width: 120px;
+  border: none;
+  padding-left: 25px;
+  text-align: center;
+  background-color: #e12454;
+  -webkit-appearance: none;
+}
+.medi-app-main-header .side-demo span {
+  top: 10px;
+  right: 15px;
+}
+.medi-app-main-menu-wrap {
+  padding-left: 5px;
+}
+.medi-app-main-menu-wrap .site-brand-logo {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 250px;
+  height: 110px;
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  box-shadow: 0px -30px 100px 0px rgba(0, 0, 0, 0.1);
+}
+.medi-app-main-menu-wrap .dropdown {
+  position: relative;
+}
+.medi-app-main-menu-wrap .dropdown:after {
+  top: -2px;
+  color: #fff;
+  right: -14px;
+  content: "+";
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  transition: 0.3s all ease-in-out;
+}
+.medi-app-main-menu-wrap .dropdown .dropdown-menu {
+  top: 115px;
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+  margin: 0px;
+  padding: 0px;
+  height: auto;
+  width: 200px;
+  border: none;
+  display: block;
+  border-radius: 0;
+  overflow: hidden;
+  visibility: hidden;
+  position: absolute;
+  background-color: #fff;
+  transition: all 0.4s ease-in-out;
+  border-top: 2px solid #e12454;
+  box-shadow: 0 5px 10px 0 rgba(83, 82, 82, 0.1);
+}
+.medi-app-main-menu-wrap .dropdown .dropdown-menu li {
+  width: 100%;
+  margin-left: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.medi-app-main-menu-wrap .dropdown .dropdown-menu li a {
+  width: 100%;
+  color: #343434;
+  display: block;
+  font-size: 14px;
+  padding: 10px 25px;
+  position: relative;
+  transition: 0.3s all ease-in-out;
+}
+.medi-app-main-menu-wrap .dropdown .dropdown-menu li a:before, .medi-app-main-menu-wrap .dropdown .dropdown-menu li a:after {
+  display: none;
+}
+.medi-app-main-menu-wrap .dropdown .dropdown-menu li a:hover {
+  background-color: #e12454;
+  color: #fff;
+}
+.medi-app-main-menu-wrap .dropdown .dropdown-menu li:last-child {
+  border-bottom: none;
+}
+.medi-app-main-menu-wrap .dropdown:hover .dropdown-menu {
+  top: 90px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.medi-app-main-navigation .navbar-nav {
+  display: inherit;
+}
+.medi-app-main-navigation li a {
+  font-size: 14px;
+  font-weight: 700;
+  color: #223645;
+  position: relative;
+  display: inline-block;
+  padding: 35px 35px 33px;
+  transition: 0.4s all ease-in-out;
+}
+.medi-app-main-navigation .navbar-nav .nav-link {
+  padding: 35px 35px 33px;
+}
+.medi-app-main-navigation.navbar-nav .nav-link {
+  padding: 35px 35px 33px;
+}
+.medi-app-main-navigation li a:after {
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  right: 0;
+  content: "";
+  height: 4px;
+  margin: 0 auto;
+  position: absolute;
+  background-color: #e12454;
+  transition: 0.4s all ease-in-out;
+}
+.medi-app-main-navigation li a:hover,
+.medi-app-main-navigation li a.active {
+  color: #e12454;
+  background-color: #f5fbff;
+}
+.medi-app-main-navigation li a:hover:after,
+.medi-app-main-navigation li a.active:after {
+  width: 100%;
+}
+
+.medi-app-side-btn button {
+  border: none;
+  color: #abb7c0;
+  font-size: 20px;
+  padding: 30px 35px;
+  background-color: transparent;
+  border-left: 1px solid #f1f1f1;
+  transition: 0.3s all ease-in-out;
+}
+.medi-app-side-btn button:hover {
+  color: #e12454;
+}
+
+.medi-app-sticky-on {
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-timing-function: ease;
+  transition: 0.3s all ease-in-out;
+  box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+}
+.medi-app-sticky-on .medi-app-header-top {
+  display: none;
+}
+.app-medi-search-body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  transform: scale(1, 0);
+  transform-origin: bottom center;
+  transition: transform 0.7s ease;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.app-medi-search-body.app-medi-search-open {
+  transform-origin: top center;
+  transform: scale(1, 1);
+}
+.app-medi-search-body .app-medi-search-form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.app-medi-search-body .app-medi-search-form .app-medi-search-form-area {
+  width: 100%;
+  z-index: 9991;
+  max-width: 600px;
+  position: relative;
+}
+.app-medi-search-body .app-medi-search-form input {
+  width: 100%;
+  height: 60px;
+  border: none;
+  padding: 0px 30px;
+  background-color: #fff;
+}
+.app-medi-search-body .app-medi-search-form button {
+  top: 0;
+  right: 0;
+  color: #fff;
+  border: none;
+  width: 120px;
+  height: 60px;
+  position: absolute;
+  background-color: #e12454;
+}
+.app-medi-search-body .outer-close {
+  top: 40px;
+  right: 55px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  line-height: 50px;
+  position: absolute;
+  background-color: red;
+}
+.app-medi-search-body .outer-close i {
+  color: #fff;
+}
+
+.app-medi-search-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.medi-app-side-btn .shopping-cart {
+  top: 85px;
+  right: 90px;
+  z-index: -1;
+  opacity: 0;
+  width: 350px;
+  display: block;
+  margin: 10px 0;
+  background: #fff;
+  padding: 30px 20px;
+  position: absolute;
+  visibility: hidden;
+  transition: 0.3s all ease-in-out;
+  border-top: 5px solid #e12454;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.medi-app-side-btn .shopping-cart.cart-show {
+  top: 80px;
+  opacity: 1;
+  z-index: 9;
+  visibility: visible;
+}
+.medi-app-side-btn .shopping-cart li {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.medi-app-side-btn .shopping-cart li:last-child {
+  border-bottom: none;
+}
+.medi-app-side-btn .shopping-cart .cart-total {
+  padding-top: 10px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.medi-app-side-btn .shopping-cart .cart-total span {
+  color: #e12454;
+}
+.medi-app-side-btn .shopping-cart .cart-checkout {
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 15px;
+  border-radius: 30px;
+  background-color: #e12454;
+}
+.medi-app-side-btn .cart-product-img {
+  margin-right: 20px;
+  height: 80px;
+  width: 80px;
+}
+.medi-app-side-btn .cart-product-text {
+  padding-top: 15px;
+}
+.medi-app-side-btn .cart-product-text h3 {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.medi-app-side-btn .cart-product-text h3 a {
+  color: #223645;
+}
+.medi-app-side-btn .cart-product-text span {
+  font-size: 14px;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.app-medi-side-bar-toggle {
+  z-index: 1;
+  width: 70px;
+  height: 70px;
+  right: 240px;
+  bottom: -60px;
+  cursor: pointer;
+  line-height: 65px;
+  text-align: center;
+  position: absolute;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 2px solid #70808c;
+}
+.app-medi-side-bar-toggle:before {
+  top: 8px;
+  left: 8px;
+  content: "";
+  width: 50px;
+  height: 50px;
+  z-index: -1;
+  position: absolute;
+  border-radius: 10px;
+  background-color: #e12454;
+}
+.app-medi-side-bar-toggle i {
+  color: #fff;
+  font-size: 26px;
+}
+
+.sm-side_inner_content {
+  top: 0px;
+  bottom: 0;
+  right: -420px;
+  height: 110vh;
+  z-index: 101;
+  position: fixed;
+  width: 400px;
+  overflow-y: scroll;
+  background-color: #fff;
+  padding: 50px 50px;
+  box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.19);
+  transition: all 0.5s;
+}
+.sm-side_inner_content p {
+  text-align: left;
+}
+.sm-side_inner_content .side_inner_logo {
+  margin: 30px 0px;
+}
+.sm-side_inner_content .side_contact {
+  margin-bottom: 30px;
+}
+.sm-side_inner_content .side_contact .social_widget {
+  margin-bottom: 40px;
+}
+.sm-side_inner_content .side_contact .social_widget h3 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 0px 10px 0px;
+}
+.sm-side_inner_content .side_contact .social_widget li {
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  margin: 0px 3px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #70808c;
+}
+.sm-side_inner_content .side_contact .social_widget li i {
+  font-size: 14px;
+}
+.sm-side_inner_content .side_contact .app-medi-sidebar-gallary {
+  margin-bottom: 25px;
+}
+.sm-side_inner_content .side_contact .app-medi-sidebar-gallary h3 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 0px 10px 0px;
+}
+.sm-side_inner_content .side_contact .app-medi-sidebar-gallary li {
+  float: left;
+  margin: 5px 3px;
+}
+.sm-side_inner_content .side_copywright {
+  font-size: 14px;
+}
+.sm-side_inner_content .close_btn {
+  top: 30px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  line-height: 40px;
+  text-align: center;
+  position: absolute;
+  background-color: #f5f5f5;
+  transition: 0.3s all ease-in-out;
+}
+.sm-side_inner_content .close_btn i {
+  font-size: 14px;
+}
+.sm-side_inner_content .close_btn:hover {
+  background-color: #e12454;
+}
+.sm-side_inner_content .close_btn:hover i {
+  color: #fff;
+}
+
+.app-medi-sidebar-inner.wide_side_on .sm-side_inner_content {
+  right: -15px;
+  z-index: 99;
+  transition: all 0.7s;
+}
+
+.app-medi-sidebar-inner .side_overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  width: 100%;
+  z-index: 11;
+  height: 110vh;
+  visibility: hidden;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease-in-out;
+  cursor: url(../img/cl.png), auto;
+}
+
+.body_overlay_on {
+  overflow: hidden;
+}
+
+.app-medi-sidebar-inner.wide_side_on .side_overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.app-medi-sidebar-gallary li {
+  width: 80px;
+  float: left;
+  height: 80px;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.medi-app-main-header .app-medi-mobile_menu_content {
+  top: 40px;
+  bottom: 0;
+  right: -350px;
+  height: 100vh;
+  z-index: 101;
+  position: fixed;
+  width: 280px;
+  overflow-y: scroll;
+  background-color: #1b0234;
+  padding: 40px 0px;
+  box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.19);
+  transition: all 0.5s ease-in;
+}
+.medi-app-main-header .app-medi-mobile_menu_content .app-medi-mobile-main-navigation {
+  width: 100%;
+}
+.medi-app-main-header .app-medi-mobile_menu_content .app-medi-mobile-main-navigation .navbar-nav {
+  width: 100%;
+}
+.medi-app-main-header .app-medi-mobile_menu_content .navbar-nav .dropdown-menu {
+  position: static !important;
+  transform: none !important;
+}
+.medi-app-main-header .app-medi-mobile_menu_content .app-medi-mobile-main-navigation .navbar-nav li {
+  width: 100%;
+  display: block;
+  transition: 0.3s all ease-in-out;
+  border-bottom: 1px solid #36125a;
+}
+.medi-app-main-header .app-medi-mobile_menu_content .app-medi-mobile-main-navigation .navbar-nav li:first-child {
+  border-bottom: 1px solid #36125a;
+}
+.medi-app-main-header .app-medi-mobile_menu_content .app-medi-mobile-main-navigation .navbar-nav li a {
+  color: #afafaf;
+  padding: 0;
+  width: 100%;
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 30px;
+  font-family: "Poppins";
+  text-transform: uppercase;
+}
+.medi-app-main-header .app-medi-mobile_menu_content .m-brand-logo {
+  width: 160px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.medi-app-main-header .app-medi-mobile_menu_wrap.mobile_menu_on .app-medi-mobile_menu_content {
+  right: 0px;
+  transition: all 0.7s ease-out;
+}
+.medi-app-main-header .mobile_menu_overlay {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  right: 0%;
+  height: 120vh;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: all 0.5s ease-in-out;
+}
+.medi-app-main-header .mobile_menu_overlay_on {
+  overflow: hidden;
+}
+.medi-app-main-header .app-medi-mobile_menu_wrap.mobile_menu_on .mobile_menu_overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.medi-app-main-header .app-medi-mobile_menu_button {
+  right: 20px;
+  top: 15px;
+  z-index: 5;
+  color: #e12454;
+  display: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+}
+.medi-app-main-header .app-medi-mobile_menu .app-medi-mobile-main-navigation .navbar-nav li a:after {
+  display: none;
+}
+.medi-app-main-header .app-medi-mobile_menu .app-medi-mobile-main-navigation .dropdown > .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.medi-app-main-header .app-medi-mobile_menu .app-medi-mobile_menu_content .app-medi-mobile-main-navigation .navbar-nav .dropdown-menu {
+  border: none;
+  display: none;
+  transition: none;
+  box-shadow: none;
+  padding: 5px 0px;
+  width: 100%;
+  background-color: transparent;
+}
+.medi-app-main-header .app-medi-mobile_menu .app-medi-mobile_menu_content .app-medi-mobile-main-navigation .navbar-nav .dropdown-menu li {
+  border: none;
+  padding: 0 20px;
+  line-height: 1;
+}
+.medi-app-main-header .app-medi-mobile_menu .dropdown {
+  position: relative;
+}
+.medi-app-main-header .app-medi-mobile_menu .dropdown .dropdown-btn {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  height: 30px;
+  color: #afafaf;
+  line-height: 22px;
+  padding: 5px 10px;
+  border: 1px solid #480b86;
+}
+.medi-app-main-header .app-medi-mobile_menu .dropdown:after {
+  display: none;
+}
+.medi-app-main-header .app-medi-mobile_menu .app-medi-mobile_menu_close {
+  color: #d60606;
+  cursor: pointer;
+  top: 15px;
+  left: 15px;
+  font-size: 20px;
+  position: absolute;
+}
+.medi-app-sticky-on .medi-app-main-menu-wrap .site-brand-logo {
+  height: 90px;
+  overflow: hidden;
+}
+/*---------------------------------------------------- */
+/*banner area*/
+/*----------------------------------------------------*/
+@keyframes icon-bounce {
+  0%, 100%, 20%, 50%, 80% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+.medi-app-banner-content {
+  padding: 185px 0px 180px;
+}
+
+.medi-app-banner-text {
+  max-width: 580px;
+}
+.medi-app-banner-text h1 {
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #223645;
+  padding-bottom: 15px;
+}
+.medi-app-banner-text p {
+  font-size: 18px;
+  padding-bottom: 45px;
+}
+.medi-app-banner-text a {
+  color: #fff;
+  line-height: 60px;
+  text-align: center;
+  display: inline-block;
+  margin: 0px 40px 0px 0px;
+}
+.medi-app-banner-text a:hover {
+  background-color: #223645;
+}
+.medi-app-banner-text a:nth-child(1) {
+  width: 180px;
+}
+.medi-app-banner-text a:nth-child(2) {
+  width: 215px;
+}
+
+.medi-app-banner-feature {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.medi-app-banner-feature-icon-text {
+  width: 150px;
+  height: 150px;
+  padding-top: 30px;
+  margin-left: 5px;
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+}
+.medi-app-banner-feature-icon-text .medi-app-banner-feature-icon {
+  line-height: 1;
+}
+.medi-app-banner-feature-icon-text .medi-app-banner-feature-icon svg {
+  height: 60px;
+  fill: #e12454;
+}
+.medi-app-banner-feature-icon-text .medi-app-banner-feature-text span {
+  font-size: 12px;
+  font-weight: 700;
+}
+.medi-app-banner-feature-icon-text:before {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 0%;
+  content: "";
+  height: 3px;
+  margin: 0 auto;
+  position: absolute;
+  background-color: #e12454;
+  transition: 0.4s all ease-in-out;
+}
+.medi-app-banner-feature-icon-text:hover:before {
+  width: 100%;
+}
+.medi-app-banner-feature-icon-text:hover .medi-app-banner-feature-icon {
+  animation: icon-bounce 0.8s ease-out infinite;
+}
+
+.app-medi-banner-cta {
+  background-color: #223645;
+}
+
+.app-medi-banner-cta-icon-text {
+  padding: 20px 50px 30px 50px;
+  background-color: #e12454;
+}
+.app-medi-banner-cta-icon-text:before {
+  left: 0;
+  top: -25px;
+  width: 100%;
+  content: "";
+  height: 25px;
+  position: absolute;
+  background-color: #e12454;
+}
+.app-medi-banner-cta-icon-text .app-medi-banner-cta-icon {
+  margin-right: 10px;
+}
+.app-medi-banner-cta-icon-text .app-medi-banner-cta-icon svg {
+  fill: #fff;
+  height: 35px;
+}
+.app-medi-banner-cta-icon-text .app-medi-banner-cta-text h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.app-medi-banner-cta-icon-text .app-medi-banner-cta-text span {
+  color: #fff;
+  font-size: 14px;
+}
+
+.app-medi-banner-cta-slug {
+  padding-top: 35px;
+  padding-left: 50px;
+}
+.app-medi-banner-cta-slug p {
+  color: #fff;
+  float: left;
+}
+.app-medi-banner-cta-slug p a {
+  font-size: 20px;
+  font-weight: 600;
+}
+.app-medi-banner-cta-slug span {
+  top: -10px;
+  width: 50px;
+  float: right;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  color: #e12454;
+  text-align: center;
+  background-color: #fff;
+}
+.app-medi-banner-cta-slug span a {
+  width: 100%;
+  display: block;
+}
+
+/*---------------------------------------------------- */
+/*About area*/
+/*----------------------------------------------------*/
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+.medi-app-about-section {
+  padding: 120px 0px 140px;
+}
+
+.medi-app-hover-img {
+  overflow: hidden;
+}
+.medi-app-hover-img:after {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 50%;
+  opacity: 0;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  transform: skewX(-25deg);
+}
+.medi-app-hover-img:hover:after {
+  opacity: 1;
+  animation: shine 0.75s;
+}
+
+.medi-app-about-img-wrap .medi-app-about-img2 {
+  margin-left: 20px;
+  transform: translateY(20px);
+}
+
+.medi-app-about-text-wrap {
+  padding-top: 58px;
+}
+
+.medi-app-about-exp {
+  padding-top: 40px;
+  margin-right: 50px;
+  border-top: 1px solid #e12454;
+}
+.medi-app-about-exp .app-medi-exp-title {
+  font-size: 14px;
+  font-weight: 700;
+  max-width: 60px;
+  color: #223645;
+  display: inline-block;
+  font-family: "Poppins";
+}
+.medi-app-about-exp h2 {
+  line-height: 1;
+  color: #e12454;
+  font-size: 150px;
+  font-weight: 600;
+  padding-top: 15px;
+}
+.medi-app-about-exp .app-medi-title2 {
+  font-size: 22px;
+  font-weight: 100;
+  max-width: 130px;
+  color: #223645;
+  display: inline-block;
+}
+
+.medi-app-about-text h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #223645;
+  padding-bottom: 25px;
+}
+.medi-app-about-text p {
+  line-height: 1.75;
+}
+.medi-app-about-text .app-medi-about-list {
+  padding-top: 20px;
+}
+.medi-app-about-text .app-medi-about-list li {
+  width: 50%;
+  float: left;
+  padding-left: 15px;
+  margin-bottom: 3px;
+  position: relative;
+}
+.medi-app-about-text .app-medi-about-list li:before {
+  top: 0;
+  left: 0;
+  content: "";
+  font-weight: 900;
+  position: absolute;
+  color: #e12454;
+  font-family: "Font Awesome 5 Free";
+}
+
+/*---------------------------------------------------- */
+/*Service area*/
+/*----------------------------------------------------*/
+.medi-app-service-section {
+  padding: 120px 0px;
+  background-color: #f1f7fb;
+}
+
+.medi-app-service-innerbox {
+  padding: 45px 40px;
+  background-color: #fff;
+}
+.medi-app-service-innerbox .medi-app-service-icon-title {
+  margin-bottom: 14px;
+}
+.medi-app-service-innerbox .medi-app-service-icon {
+  margin-right: 20px;
+  transition: 0.6s cubic-bezier(0.24, 0.74, 0.58, 1);
+}
+.medi-app-service-innerbox .medi-app-service-icon svg {
+  height: 60px;
+  fill: #e12454;
+}
+.medi-app-service-innerbox .app-medi-service-title h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #223645;
+}
+.medi-app-service-innerbox .app-medi-service-text p {
+  font-size: 14px;
+  line-height: 1.857;
+  padding-bottom: 30px;
+}
+.medi-app-service-innerbox .app-medi-service-text li {
+  font-size: 14px;
+  font-weight: 700;
+  padding-left: 35px;
+  color: #223645;
+  position: relative;
+  margin-bottom: 12px;
+}
+.medi-app-service-innerbox .app-medi-service-text li:last-child {
+  margin-bottom: 0;
+}
+.medi-app-service-innerbox .app-medi-service-text li:before {
+  top: 0;
+  left: 0;
+  content: "";
+  font-weight: 900;
+  position: absolute;
+  color: #e12454;
+  font-family: "Font Awesome 5 Free";
+}
+.medi-app-service-innerbox:hover .medi-app-service-icon {
+  transform: rotateY(360deg);
+}
+
+#app-medi-service-slider .owl-nav {
+  display: none;
+}
+#app-medi-service-slider .owl-dots {
+  margin-top: 40px;
+  text-align: center;
+}
+#app-medi-service-slider .owl-dots .owl-dot {
+  height: 6px;
+  width: 24px;
+  margin: 0px 5px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: #6f6f6f;
+  transition: 0.3s all ease-in-out;
+}
+#app-medi-service-slider .owl-dots .owl-dot.active {
+  background-color: #e12454;
+}
+
+/*---------------------------------------------------- */
+/*CTA area*/
+/*----------------------------------------------------*/
+.medi-app-cta-section {
+  padding: 120px 0px;
+}
+.medi-app-cta-section .medi-app-background_overlay {
+  background-color: rgba(225, 35, 83, 0.85);
+}
+
+.medi-app-cta-text {
+  padding-top: 40px;
+}
+.medi-app-cta-text .medi-app-section-title {
+  padding-bottom: 40px;
+}
+.medi-app-cta-text .medi-app-section-title .title-tag,
+.medi-app-cta-text .medi-app-section-title h2,
+.medi-app-cta-text .medi-app-section-title p {
+  color: #fff;
+}
+.medi-app-cta-text .medi-app-section-title h2 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.medi-app-cta-text .medi-app-section-title p {
+  line-height: 1.75;
+  max-width: 520px;
+}
+.medi-app-cta-text .medi-app-cta-list li {
+  width: 50%;
+  float: left;
+  color: #fff;
+  font-weight: 700;
+  padding-left: 60px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.medi-app-cta-text .medi-app-cta-list li:before {
+  top: -8px;
+  left: 0;
+  width: 40px;
+  content: "";
+  height: 40px;
+  position: absolute;
+  border-radius: 100%;
+  border: 2px solid #ffffff7d;
+}
+.medi-app-cta-text .medi-app-cta-list li:after {
+  top: -1px;
+  left: 13px;
+  content: "";
+  font-weight: 900;
+  position: absolute;
+  color: #ffffff7d;
+  font-family: "Font Awesome 5 Free";
+}
+
+.medi-app-cta-form-wrap {
+  padding: 50px;
+  background-color: #fff;
+}
+.medi-app-cta-form-wrap h3 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #223645;
+  padding-bottom: 15px;
+}
+.medi-app-cta-form-wrap p {
+  font-size: 14px;
+  max-width: 415px;
+  padding-bottom: 25px;
+}
+.app-medi-cta-form-input {
+  flex-wrap: wrap;
+  margin: 0px -10px;
+}
+
+.app-medi-cta-input,
+.app-medi-cta-input2 {
+  padding: 0px 10px;
+  margin-bottom: 20px;
+}
+.app-medi-cta-input input,
+.app-medi-cta-input select,
+.app-medi-cta-input2 input,
+.app-medi-cta-input2 select {
+  width: 225px;
+  height: 58px;
+  font-size: 14px;
+  padding-left: 40px;
+  border: 1px solid #dcdcdc;
+}
+.app-medi-cta-input .icon-bg,
+.app-medi-cta-input2 .icon-bg {
+  top: 19px;
+  left: 30px;
+  font-size: 14px;
+  color: #e12454;
+}
+
+.app-medi-cta-input2 input {
+  width: 143px;
+}
+
+.app-medi-cta-section-2 {
+  padding: 100px 0px;
+  background-color: #223645;
+}
+
+.app-medi-cta-call .app-medi-cta-icon {
+  margin-right: 20px;
+}
+.app-medi-cta-call .app-medi-cta-icon-2 {
+  margin-left: 5px;
+}
+.app-medi-cta-call .app-medi-cta-text-2 {
+  overflow: hidden;
+  padding-top: 12px;
+  display: inline-block;
+}
+.app-medi-cta-call .app-medi-cta-text-2 span b {
+  color: #e12454;
+}
+.app-medi-cta-call .app-medi-cta-text-2 h4 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+.app-medi-cta-call .app-medi-cta-text-2 h4 span {
+  color: #e12454;
+}
+
+.app-medi-cta-btn a {
+  color: #fff;
+  height: 60px;
+  width: 200px;
+  margin: 0 auto;
+  font-weight: 700;
+  line-height: 60px;
+  display: inline-block;
+  background-color: #e12454;
+}
+
+/*---------------------------------------------------- */
+/*Team area*/
+/*----------------------------------------------------*/
+.app-medi-team-section {
+  padding: 120px 0px;
+}
+
+.app-medi-team-innerbox .app-medi-team-img {
+  overflow: hidden;
+}
+.app-medi-team-innerbox .app-medi-team-img img {
+  transition: 0.5s all ease-in-out;
+}
+.app-medi-team-innerbox .app-medi-team-img:before {
+  top: -35px;
+  content: "";
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  right: -100px;
+  position: absolute;
+  border-radius: 100%;
+  background-color: #e12454;
+  transition: 0.4s all ease-in-out;
+  transition-delay: 0.2s;
+}
+.app-medi-team-innerbox .app-medi-team-icon {
+  top: 25px;
+  opacity: 0;
+  right: 15px;
+  z-index: 2;
+  visibility: hidden;
+  position: absolute;
+  transition: 0.4s all ease-in-out;
+  transition-delay: 0.4s;
+}
+.app-medi-team-innerbox .app-medi-team-icon svg {
+  fill: #fff;
+  height: 25px;
+}
+.app-medi-team-innerbox .app-medi-team-social {
+  left: 0;
+  right: 0;
+  height: 30px;
+  bottom: -30px;
+  margin: 0 auto;
+  max-width: 165px;
+  line-height: 30px;
+  position: absolute;
+  background-color: #e12454;
+  transition: 0.3s all ease-in-out;
+}
+.app-medi-team-innerbox .app-medi-team-social a {
+  color: #fff;
+  font-size: 14px;
+  margin: 0px 5px;
+}
+.app-medi-team-innerbox .app-medi-text-text {
+  padding: 25px 35px;
+  border: 2px solid #f7f7f7;
+  transition: 0.3s all ease-in-out;
+}
+.app-medi-team-innerbox .app-medi-text-text span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #e12454;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.app-medi-team-innerbox .app-medi-text-text h3 {
+  font-size: 22px;
+  font-weight: 600;
+  padding-top: 5px;
+  color: #223645;
+}
+.app-medi-team-innerbox:hover .app-medi-team-social {
+  bottom: 0px;
+}
+.app-medi-team-innerbox:hover .app-medi-team-img:before {
+  right: -35px;
+}
+.app-medi-team-innerbox:hover .app-medi-team-icon {
+  top: 15px;
+  opacity: 1;
+  visibility: visible;
+}
+.app-medi-team-innerbox:hover .app-medi-text-text {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -30px 100px 0px;
+}
+.app-medi-team-innerbox:hover .app-medi-team-img img {
+  transform: scale(1.2);
+}
+
+/*---------------------------------------------------- */
+/*Process area*/
+/*----------------------------------------------------*/
+.app-medi-process-section {
+  padding: 120px 0px;
+  background-color: #f1f7fb;
+}
+
+.app-medi-process-img {
+  z-index: 1;
+  padding-top: 80px;
+}
+.app-medi-process-img:before {
+  top: 0px;
+  z-index: -1;
+  content: "";
+  left: -100px;
+  width: 350px;
+  height: 675px;
+  position: absolute;
+  background-color: #fff;
+}
+
+.medi-app-process-step-item {
+  z-index: 1;
+  padding-bottom: 30px;
+}
+.medi-app-process-step-item .medi-app-process-number {
+  width: 60px;
+  color: #fff;
+  height: 60px;
+  font-size: 14px;
+  display: table;
+  margin-top: 20px;
+  line-height: 60px;
+  font-weight: 700;
+  margin-right: 30px;
+  border-radius: 100%;
+  font-family: "Poppins";
+  background-color: #e12454;
+}
+.medi-app-process-step-item .medi-app-process-step-text {
+  max-width: 470px;
+  padding: 35px 40px;
+  background-color: #fff;
+}
+.medi-app-process-step-item .medi-app-process-step-text:before {
+  width: 0;
+  top: 35px;
+  height: 0;
+  content: "";
+  left: -15px;
+  position: absolute;
+  border-top: 15px solid transparent;
+  border-right: 15px solid #fff;
+  border-bottom: 15px solid transparent;
+}
+.medi-app-process-step-item .medi-app-process-step-text h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #223645;
+  padding-bottom: 10px;
+}
+.medi-app-process-step-item:before, .medi-app-process-step-item:after {
+  top: 55px;
+  left: 30px;
+  width: 2px;
+  z-index: -2;
+  content: "";
+  height: 100%;
+  position: absolute;
+  background-color: #e2eaef;
+  transition: 0.4s all ease-in-out;
+}
+.medi-app-process-step-item:after {
+  bottom: 0;
+  height: 0;
+  z-index: -1;
+  background-color: #e12454;
+}
+.medi-app-process-step-item:last-child {
+  padding-bottom: 0;
+}
+.medi-app-process-step-item:last-child:before, .medi-app-process-step-item:last-child:after {
+  display: none;
+}
+.medi-app-process-step-item:hover:after {
+  height: 100%;
+  bottom: auto;
+}
+
+/*---------------------------------------------------- */
+/*Feature area*/
+/*----------------------------------------------------*/
+.app-medi-feature-section {
+  background-color: #f5f5f5;
+}
+
+.app-medi-feature-img-text {
+  margin: 0 auto;
+  max-width: 640px;
+}
+.app-medi-feature-img-text:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  content: "";
+  height: 100%;
+  background-color: rgba(34, 53, 68, 0.75);
+  position: absolute;
+}
+.app-medi-feature-img-text .app-medi-feature-icon-text {
+  top: 100px;
+  left: 80px;
+  position: absolute;
+}
+.app-medi-feature-img-text .app-medi-feature-icon-text .app-medi-feature-icon {
+  line-height: 1;
+  margin-bottom: 30px;
+}
+.app-medi-feature-img-text .app-medi-feature-icon-text .app-medi-feature-icon svg {
+  height: 60px;
+  fill: #e12454;
+}
+.app-medi-feature-img-text .app-medi-feature-icon-text .app-medi-text h3 {
+  color: #fff;
+  font-size: 36px;
+  max-width: 350px;
+  font-weight: 700;
+  line-height: 1.278;
+  padding-bottom: 15px;
+}
+.app-medi-feature-img-text .app-medi-feature-icon-text .app-medi-text span {
+  color: #adbbc5;
+  font-size: 17px;
+}
+.app-medi-feature-img-text .app-medi-feature-icon-text .app-medi-text .app-medi-feature-more-btn {
+  bottom: 0;
+  right: -95px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  position: absolute;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: #fff;
+}
+
+/*---------------------------------------------------- */
+/*Testimonial area*/
+/*----------------------------------------------------*/
+.app-medi-testimonial-section {
+  padding: 120px 0px 160px;
+}
+
+.app-medi-testimonial-slider {
+  bottom: -130px;
+  padding: 45px;
+  right: 30px;
+  max-width: 385px;
+  position: absolute;
+  background-color: #e12454;
+}
+.app-medi-testimonial-slider .owl-nav {
+  display: none;
+}
+.app-medi-testimonial-slider .app-medi-testimonial-quote p {
+  font-size: 14px;
+  color: #ffd6e0;
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+}
+.app-medi-testimonial-slider .app-medi-testimonial-quote .app-medi-testimonial-author {
+  margin-top: 25px;
+}
+.app-medi-testimonial-slider .app-medi-testimonial-quote .app-medi-testimonial-author .app-medi-test-author-img {
+  width: 47px;
+  height: 47px;
+  overflow: hidden;
+  margin-right: 15px;
+  border-radius: 100%;
+}
+.app-medi-testimonial-slider .app-medi-testimonial-quote .app-medi-testimonial-author .app-medi-test-author-text {
+  color: #fff;
+}
+.app-medi-testimonial-slider .app-medi-testimonial-quote .app-medi-testimonial-author .app-medi-test-author-text h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.app-medi-testimonial-slider .app-medi-testimonial-quote .app-medi-testimonial-author .app-medi-test-author-text span {
+  font-size: 14px;
+}
+.app-medi-testimonial-slider .app-medi-testimonial-quote .app-medi-icon-bg {
+  right: 45px;
+  bottom: -20px;
+  z-index: -1;
+  position: absolute;
+  line-height: 1;
+}
+.app-medi-testimonial-slider .app-medi-testimonial-quote .app-medi-icon-bg svg {
+  fill: #e73461;
+  height: 160px;
+}
+
+.app-medi-testimonial-text {
+  padding-top: 35px;
+}
+.app-medi-testimonial-text .medi-app-section-title {
+  padding-bottom: 40px;
+}
+
+.app-medi-testimonial-text-details p {
+  line-height: 1.75;
+  padding-bottom: 15px;
+}
+
+.app-medi-testimonial-signature {
+  margin-top: 15px;
+}
+
+/*---------------------------------------------------- */
+/*blog area*/
+/*----------------------------------------------------*/
+.medi-app-blog-section {
+  padding: 120px 0px;
+  background-color: #f1f7fb;
+}
+
+.medi-app-blog-img-text .medi-app-blog-img {
+  overflow: hidden;
+}
+.medi-app-blog-img-text .medi-app-blog-img img {
+  transform: scale(1.2);
+  transition: 0.4s all ease-in-out;
+}
+.medi-app-blog-img-text .medi-app-blog-cat {
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  position: absolute;
+  padding: 5px 20px;
+  background-color: #e12454;
+}
+.medi-app-blog-img-text .medi-app-blog-text {
+  padding: 40px 35px;
+  background-color: #fff;
+  border: 2px solid #e2e7eb;
+  transition: 0.4s all ease-in-out;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.04);
+}
+.medi-app-blog-img-text .medi-app-blog-text .medi-app-blog-meta {
+  margin-bottom: 8px;
+}
+.medi-app-blog-img-text .medi-app-blog-text .medi-app-blog-meta a {
+  font-size: 14px;
+  margin-right: 40px;
+  position: relative;
+}
+.medi-app-blog-img-text .medi-app-blog-text .medi-app-blog-meta a:after {
+  top: 2px;
+  right: -22px;
+  width: 2px;
+  content: "";
+  height: 12px;
+  position: absolute;
+  background-color: #dde6ec;
+}
+.medi-app-blog-img-text .medi-app-blog-text .medi-app-blog-meta a:last-child:after {
+  display: none;
+}
+.medi-app-blog-img-text .medi-app-blog-text h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #223645;
+  padding-bottom: 15px;
+}
+.medi-app-blog-img-text .medi-app-blog-text .medi-app-blog-more {
+  color: #98a6b1;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+}
+.medi-app-blog-img-text .medi-app-blog-text .medi-app-blog-more:after {
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  content: "";
+  width: 100%;
+  position: absolute;
+  background-color: #98a6b1;
+}
+.medi-app-blog-img-text:hover .medi-app-blog-text {
+  box-shadow: none;
+  border: 2px solid #fff;
+}
+.medi-app-blog-img-text:hover .medi-app-blog-img img {
+  transform: scale(1);
+}
+
+.app-medi-partner-section {
+  padding: 75px 0px;
+  background-color: #e12454;
+}
+
+.app-medi-partner-slider .owl-nav {
+  display: none;
+}
+.app-medi-partner-slider .app-medi-partner-img img {
+  transition: 0.4s all ease-in-out;
+  filter: grayscale(1);
+}
+.app-medi-partner-slider .app-medi-partner-img:hover img {
+  transform: scale(1.1);
+  filter: grayscale(0);
+}
+
+/*---------------------------------------------------- */
+/*Footer area*/
+/*----------------------------------------------------*/
+.app-medi-footer {
+  padding-top: 95px;
+}
+.app-medi-footer .medi-app-background_overlay {
+  background-color: rgba(16, 30, 41, 0.75);
+}
+.app-medi-footer .medi-app-footer-widget-content {
+  padding-bottom: 100px;
+}
+
+.app-medi-footer-widget .medi-app-widget-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+.app-medi-footer-widget .app-medi-logo-widget {
+  max-width: 270px;
+}
+.app-medi-footer-widget .app-medi-logo-widget .medi-app-footer-logo {
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.app-medi-footer-widget .app-medi-logo-widget p {
+  color: #b2c1cc;
+  padding-bottom: 20px;
+}
+.app-medi-footer-widget .app-medi-logo-widget .app-medi-footer-social {
+  margin-top: 15px;
+}
+.app-medi-footer-widget .app-medi-logo-widget .app-medi-footer-social a {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 50px;
+  margin-right: 8px;
+  text-align: center;
+  border-radius: 100%;
+  display: inline-block;
+  border: 1px solid #727b81;
+  transition: 0.4s all ease-in-out;
+}
+.app-medi-footer-widget .app-medi-logo-widget .app-medi-footer-social a:hover {
+  background-color: #e12454;
+  border: 1px solid #e12454;
+}
+.app-medi-footer-widget .app-medi-menu-widget li {
+  width: 50%;
+  float: left;
+  margin-bottom: 15px;
+}
+.app-medi-footer-widget .app-medi-menu-widget li a {
+  font-size: 15px;
+  color: #b2c1cc;
+}
+.app-medi-footer-widget .app-medi-contact-widget {
+  background-color: #fff;
+  padding: 50px 60px 50px 50px;
+  border-bottom: 5px solid #e12454;
+}
+.app-medi-footer-widget .app-medi-contact-widget .contact-widget-wrap {
+  margin-bottom: 20px;
+}
+.app-medi-footer-widget .app-medi-contact-widget .contact-widget-wrap .cw-widget-text {
+  padding-top: 5px;
+}
+.app-medi-footer-widget .app-medi-contact-widget .contact-widget-wrap .cw-widget-text h3 {
+  color: #033333;
+  font-size: 22px;
+  font-weight: 600;
+}
+.app-medi-footer-widget .app-medi-contact-widget .contact-widget-wrap .cw-widget-text span {
+  color: #777777;
+  font-size: 14px;
+}
+.app-medi-footer-widget .app-medi-contact-widget .cw-widget-btn {
+  margin: 0 auto;
+  line-height: 60px;
+}
+.app-medi-footer-widget .app-medi-contact-widget .cw-widget-btn a {
+  width: 100%;
+  display: block;
+}
+
+.app-medi-footer-copyright {
+  padding: 28px 0px;
+  background-color: #1a2a36;
+}
+
+.app-medi-copyright-text {
+  color: #a6b5c0;
+}
+.app-medi-copyright-text a {
+  font-weight: 700;
+}
+
+.app-medi-footer-menu {
+  text-align: right;
+}
+.app-medi-footer-menu li {
+  margin-left: 40px;
+}
+.app-medi-footer-menu li a {
+  color: #a6b5c0;
+}
+
+/*---------------------------------------------------- */
+/*Respondsive area*/
+/*----------------------------------------------------*/
+@media screen and (max-width: 1690px) {
+  .medi-app-main-navigation li a {
+    padding: 35px 15px 33px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .medi-app-main-menu-wrap .site-brand-logo {
+    width: 170px;
+    height: 75px;
+    background-color: #fff;
+  }
+
+  .medi-app-main-navigation li a {
+    padding: 27px 15px 25px;
+  }
+
+  .medi-app-side-btn button {
+    font-size: 15px;
+    padding: 23px 15px 25px;
+  }
+
+  .medi-app-side-btn .shopping-cart {
+    right: 0;
+  }
+
+  .medi-app-side-btn .shopping-cart.cart-show {
+    top: 65px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .medi-app-main-navigation {
+    display: none;
+  }
+
+  .medi-app-main-menu-wrap .site-brand-logo {
+    left: 0;
+    right: auto;
+    height: 70px;
+  }
+
+  .medi-app-side-toggle {
+    display: none;
+  }
+
+  .cart-open-btn {
+    border-right: 1px solid #f1f1f1 !important;
+  }
+
+  .medi-app-side-option {
+    padding-right: 50px;
+  }
+
+  .medi-app-main-header .app-medi-mobile_menu_button {
+    display: block;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .app-medi-banner-cta-icon-text:before {
+    display: none;
+  }
+
+  .app-medi-banner-cta-icon-text {
+    padding: 15px;
+  }
+
+  .app-medi-banner-cta-slug {
+    padding-top: 23px;
+    padding-left: 0px;
+  }
+
+  .medi-app-about-text h2 {
+    font-size: 30px;
+  }
+
+  .app-medi-cta-input input,
+  .app-medi-cta-input select,
+  .app-medi-cta-input2 input,
+  .app-medi-cta-input2 select,
+  .app-medi-cta-input, .app-medi-cta-input2 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .medi-app-about-img-wrap,
+  .medi-app-about-text-wrap,
+  .app-medi-process-text,
+  .app-medi-testimonial-text {
+    margin: 0 auto;
+    max-width: 570px;
+  }
+
+  .app-medi-team-innerbox {
+    margin: 0 auto;
+    max-width: 270px;
+    margin-bottom: 30px;
+  }
+
+  .app-medi-process-img {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .app-medi-cta-call {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .app-medi-cta-call .app-medi-cta-icon,
+  .app-medi-cta-call .app-medi-cta-icon-2 {
+    float: none !important;
+  }
+
+  .app-medi-cta-call .app-medi-cta-text-2 {
+    text-align: center !important;
+    margin-top: 20px;
+  }
+
+  .app-medi-testimonial-slider {
+    margin: 0 auto;
+    position: static;
+    margin-top: 30px;
+  }
+
+  .app-medi-testimonial-slider-img-wrap {
+    text-align: center;
+  }
+
+  .medi-app-blog-img-text {
+    margin: 0 auto;
+    max-width: 370px;
+    margin-bottom: 30px;
+  }
+
+  .app-medi-footer-widget {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .medi-app-header-top {
+    padding: 6px 15px 8px;
+  }
+
+  .medi-app-header-top .medi-app-header-top-social {
+    padding-right: 10px;
+  }
+
+  .medi-app-header-top .medi-app-header-top-contact a {
+    margin-right: 15px;
+  }
+
+  .medi-app-header-top .medi-app-header-top-language {
+    display: none;
+  }
+
+  .medi-app-header-top .medi-app-header-top-contact {
+    padding-right: 0;
+  }
+
+  .app-medi-footer .medi-app-footer-widget-content {
+    padding-bottom: 40px;
+  }
+
+  .app-medi-footer-widget .app-medi-contact-widget .contact-widget-wrap .cw-widget-text {
+    text-align: left !important;
+  }
+
+  .cw-widget-icon {
+    margin-right: 15px;
+  }
+
+  .app-medi-footer {
+    padding-top: 45px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .medi-app-banner-text h1 {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .medi-app-header-top .medi-app-header-top-contact {
+    display: none;
+  }
+
+  .medi-app-banner-feature {
+    position: static;
+    padding-top: 50px;
+  }
+
+  .medi-app-banner-feature-icon-text {
+    width: 100px;
+    height: 100px;
+    padding-top: 20px;
+  }
+
+  .medi-app-banner-feature-icon-text .medi-app-banner-feature-icon svg {
+    height: 40px;
+  }
+
+  .medi-app-banner-content {
+    padding: 100px 0px 100px;
+  }
+
+  .medi-app-banner-text a:nth-child(1) {
+    width: 140px;
+  }
+
+  .medi-app-banner-text a:nth-child(2) {
+    width: 195px;
+  }
+
+  .medi-app-section-title h2 {
+    font-size: 40px;
+  }
+
+  .medi-app-section-title {
+    padding-bottom: 30px;
+  }
+
+  .medi-app-section-title .title-watermark {
+    top: -25px;
+    font-size: 125px;
+  }
+
+  .medi-app-service-section {
+    padding: 60px 0px;
+  }
+
+  .medi-app-cta-section {
+    padding: 60px 0px;
+  }
+
+  .app-medi-team-section {
+    padding: 60px 0px;
+  }
+
+  .app-medi-process-section {
+    padding: 60px 0px;
+  }
+
+  .app-medi-cta-section-2 {
+    padding: 50px 0px;
+  }
+
+  .app-medi-feature-img-text .app-medi-feature-icon-text {
+    top: 35px;
+    left: 35px;
+  }
+
+  .app-medi-testimonial-section {
+    padding: 60px 0px 60px;
+  }
+
+  .medi-app-blog-section {
+    padding: 60px 0px;
+  }
+
+  .app-medi-footer-menu {
+    float: left;
+    margin-top: 10px;
+  }
+
+  .app-medi-footer-menu li {
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .medi-app-banner-text h1 {
+    font-size: 45px;
+  }
+
+  .medi-app-banner-text a {
+    height: 50px;
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 50px;
+    margin: 0px 25px 0px 0px;
+  }
+
+  .medi-app-about-section {
+    padding: 60px 0px;
+  }
+
+  .app-medi-footer-widget .app-medi-contact-widget .cw-widget-btn span,
+  .medi-app-cta-form-wrap button span,
+  .medi-app-banner-text a span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .medi-app-banner-feature-icon-text {
+    margin-bottom: 10px;
+  }
+
+  .medi-app-banner-text a:nth-child(1) {
+    width: 120px;
+  }
+
+  .medi-app-banner-text a:nth-child(2) {
+    width: 155px;
+  }
+
+  .medi-app-banner-text p {
+    padding-bottom: 25px;
+  }
+
+  .medi-app-about-text-wrap {
+    flex-wrap: wrap;
+  }
+
+  .medi-app-about-exp {
+    margin-bottom: 20px;
+  }
+
+  .medi-app-cta-text .medi-app-section-title h2 {
+    font-size: 30px;
+  }
+
+  .medi-app-cta-text .medi-app-cta-list li {
+    width: 100%;
+  }
+
+  .medi-app-cta-form-wrap {
+    padding: 25px;
+  }
+
+  .app-medi-footer-widget .app-medi-contact-widget .cw-widget-btn,
+  .medi-app-cta-form-wrap button, .medi-app-banner-text a {
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .app-medi-process-img:before {
+    display: none;
+  }
+
+  .app-medi-process-img {
+    padding-top: 0;
+  }
+
+  .app-medi-feature-img-text .app-medi-feature-icon-text .app-medi-text h3 {
+    font-size: 24px;
+    padding-bottom: 5px;
+  }
+
+  .app-medi-feature-img-text .app-medi-feature-icon-text .app-medi-feature-icon svg {
+    height: 30px;
+  }
+
+  .app-medi-feature-img-text .app-medi-feature-icon-text .app-medi-feature-icon {
+    margin-bottom: 15px;
+  }
+
+  .medi-app-section-title h2 {
+    font-size: 34px;
+  }
+
+  .medi-app-side-btn .shopping-cart.cart-show {
+    top: 60px;
+  }
+
+  .medi-app-header-top .medi-app-header-top-social a {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .medi-app-side-btn .cart-product-text h3 {
+    font-size: 16px;
+  }
+
+  .app-medi-search-body .outer-close {
+    top: 15px;
+    right: 15px;
+  }
+
+  .app-medi-search-body .app-medi-search-form button {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .medi-app-banner-text h1 {
+    font-size: 40px;
+  }
+
+  .medi-app-section-title .title-watermark {
+    top: 0px;
+    font-size: 75px;
+  }
+
+  .app-medi-cta-btn a {
+    width: 160px;
+  }
+
+  .app-medi-footer-widget .app-medi-contact-widget .contact-widget-wrap .cw-widget-text h3 {
+    font-size: 20px;
+  }
+
+  .app-medi-footer-widget .app-medi-contact-widget {
+    padding: 52px 30px 50px 30px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .medi-app-side-btn .shopping-cart {
+    width: 310px;
+  }
+}
+/*---------------------------------------------------- */

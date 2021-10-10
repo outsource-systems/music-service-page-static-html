@@ -1,0 +1,136 @@
+@-webkit-keyframes Rx-width-10 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 10%;
+  }
+}
+
+@keyframes Rx-width-10 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 10%;
+  }
+}
+@-webkit-keyframes Rx-width-15 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 15%;
+  }
+}
+
+@keyframes Rx-width-15 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 15%;
+  }
+}
+@-webkit-keyframes Rx-width-20 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 20%;
+  }
+}
+
+@keyframes Rx-width-20 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 75%;
+  }
+}
+@-webkit-keyframes Rx-width-20 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 20%;
+  }
+}
+
+@keyframes Rx-width-75 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 75%;
+  }
+}
+@-webkit-keyframes Rx-width-65 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 65%;
+  }
+}
+@keyframes Rx-width-90 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 90%;
+  }
+}
+@-webkit-keyframes Rx-width-90 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 90%;
+  }
+}
+@keyframes Rx-width-85 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 85%;
+  }
+}
+.Rx-width-75 {
+  -webkit-animation-name: Rx-width-75;
+  -o-animation-name: Rx-width-75;
+  animation-name: Rx-width-75;
+  animation-fill-mode: forwards;
+}
+.Rx-width-85 {
+  -webkit-animation-name: Rx-width-85;
+  -o-animation-name: Rx-width-85;
+  animation-name: Rx-width-85;
+  animation-fill-mode: forwards;
+}
+.Rx-width-65 { 
+  -webkit-animation-name: Rx-width-65;
+  -o-animation-name: Rx-width-65;
+  animation-name: Rx-width-65;
+  animation-fill-mode: forwards;
+}
+.Rx-width-90 {
+  -webkit-animation-name: Rx-width-90;
+  -o-animation-name: Rx-width-90;
+  animation-name: Rx-width-90;
+  animation-fill-mode: forwards;
+}

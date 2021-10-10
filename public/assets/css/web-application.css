@@ -1,0 +1,1634 @@
+@charset "UTF-8";
+/*----------------------------------------------------
+@File: Default Styles
+@Author: 
+@URL: 
+
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+---------------------------------------------------- */
+/*=====================================================================
+@Template Name: 
+@Author:
+
+
+=====================================================================*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,500,700|Roboto:100,300,400,500,700&display=swap");
+.web-app-download-text .web-app-about-btn, .web-app-about-text-img .web-app-about-text .web-app-about-btn {
+  color: #fff;
+  width: 195px;
+  height: 60px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  background-color: #22d38c;
+  transition: 0.3s all ease-in-out;
+}
+.web-app-download-text .web-app-about-btn i, .web-app-about-text-img .web-app-about-text .web-app-about-btn i {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.web-app-download-text .web-app-about-btn:hover, .web-app-about-text-img .web-app-about-text .web-app-about-btn:hover {
+  background-color: #179af0;
+}
+.web-app-download-text .web-app-about-btn:hover i, .web-app-about-text-img .web-app-about-text .web-app-about-btn:hover i {
+  animation: toLeftFromRight 0.3s forwards;
+}
+
+.web-app-footer-section .web-app-footer-widget .web-app-footer-support {
+  font-size: 14px;
+  padding-left: 60px;
+}
+.web-app-footer-section .web-app-footer-widget .web-app-footer-support span {
+  color: #6c8493;
+  display: block;
+}
+.web-app-footer-section .web-app-footer-widget .web-app-footer-support a {
+  color: #fff;
+  font-weight: 700;
+}
+.web-app-footer-section .web-app-footer-widget .web-app-footer-support:before {
+  top: 10px;
+  left: 25px;
+  width: 2px;
+  content: "";
+  height: 40px;
+  position: absolute;
+  background-color: #fff;
+}
+@keyframes fadeFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeFromUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fadeFromUp {
+  animation-name: fadeFromUp;
+}
+
+.fadeFromRight {
+  animation-name: fadeFromRight;
+}
+
+.fadeFromLeft {
+  animation-name: fadeFromLeft;
+}
+
+/*global area*/
+/*----------------------------------------------------*/
+.web-app-home {
+  margin: 0;
+  padding: 0;
+  color: #818992;
+  font-size: 16px;
+  overflow-x: hidden;
+  line-height: 1.625;
+  font-family: "Roboto";
+  -moz-osx-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+
+.web-app-home::selection {
+  color: #ffffff;
+  background-color: #6e3ebf;
+}
+
+.web-app-home::-moz-selection {
+  color: #ffffff;
+  background-color: #6e3ebf;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.ul-li ul {
+  margin: 0;
+  padding: 0;
+}
+.ul-li ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.ul-li-block ul {
+  margin: 0;
+  padding: 0;
+}
+.ul-li-block ul li {
+  list-style: none;
+  display: block;
+}
+
+div#web-app-preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background-color: #fff;
+  background: #fff url("../img/pre.svg") no-repeat center center;
+}
+
+[data-background] {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+.form-control:focus,
+button:visited,
+button.active,
+button:hover,
+button:focus,
+input:visited,
+input.active,
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus,
+a:hover,
+a:focus,
+a:visited,
+a.active,
+select,
+select:hover,
+select:focus,
+select:visited {
+  outline: none;
+  box-shadow: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.form-control {
+  box-shadow: none;
+}
+
+.pera-content p {
+  margin-bottom: 0;
+}
+@keyframes zooming {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.zooming {
+  animation: zooming 18s infinite both;
+}
+
+.web-app-headline h1,
+.web-app-headline h2,
+.web-app-headline h3,
+.web-app-headline h4,
+.web-app-headline h5,
+.web-app-headline h6 {
+  margin: 0;
+  font-family: "Poppins";
+}
+
+.web-app-scrollup {
+  width: 55px;
+  right: 20px;
+  z-index: 5;
+  height: 55px;
+  bottom: 20px;
+  display: none;
+  position: fixed;
+  line-height: 55px;
+  border-radius: 100%;
+  background-color: #01e07b;
+}
+.web-app-scrollup i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.web-app-section-title h2 {
+  color: #1b2153;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.278;
+}
+.web-app-section-title span {
+  display: block;
+  font-weight: 200;
+}
+
+/*---------------------------------------------------- */
+/*Header area*/
+/*----------------------------------------------------*/
+.web-app-main-header {
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  padding-top: 40px;
+  position: absolute;
+}
+.web-app-main-header .web-app-brand-logo {
+  margin-top: 10px;
+}
+.web-app-main-header .dropdown {
+  position: relative;
+}
+.web-app-main-header .dropdown:after {
+  top: -2px;
+  color: #000;
+  right: -14px;
+  content: "+";
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  transition: 0.3s all ease-in-out;
+}
+.web-app-main-header .dropdown .dropdown-menu {
+  top: 65px;
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+  margin: 0px;
+  padding: 0px;
+  height: auto;
+  width: 200px;
+  border: none;
+  display: block;
+  border-radius: 0;
+  overflow: hidden;
+  visibility: hidden;
+  position: absolute;
+  background-color: #fff;
+  transition: all 0.4s ease-in-out;
+  border-bottom: 2px solid #01e07b;
+  box-shadow: 0 5px 10px 0 rgba(83, 82, 82, 0.1);
+}
+.web-app-main-header .dropdown .dropdown-menu li {
+  width: 100%;
+  margin-left: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.web-app-main-header .dropdown .dropdown-menu li a {
+  width: 100%;
+  color: #343434;
+  display: block;
+  font-size: 14px;
+  padding: 10px 25px;
+  position: relative;
+  transition: 0.3s all ease-in-out;
+}
+.web-app-main-header .dropdown .dropdown-menu li a:before {
+  display: none;
+}
+.web-app-main-header .dropdown .dropdown-menu li a:after {
+  left: 10px;
+  top: 16px;
+  width: 8px;
+  height: 8px;
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  transform: scale(0);
+  background-color: #fff;
+  transition: 0.3s all ease-in-out;
+}
+.web-app-main-header .dropdown .dropdown-menu li a:hover {
+  background-color: #01e07b;
+  color: #fff;
+}
+.web-app-main-header .dropdown .dropdown-menu li a:hover:after {
+  transform: scale(1);
+}
+.web-app-main-header .dropdown .dropdown-menu li:last-child {
+  border-bottom: none;
+}
+.web-app-main-header .dropdown:hover .dropdown-menu {
+  top: 45px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.web-app-main-menu-item .navbar-nav {
+  display: inherit;
+}
+.web-app-main-menu-item .web-app-main-navigation {
+  padding-top: 15px;
+  display: inline-block;
+}
+.web-app-main-menu-item .web-app-main-navigation li {
+  margin: 0px 25px;
+}
+.web-app-main-menu-item .web-app-main-navigation li a {
+  color: #000;
+  font-size: 15px;
+  display: inline;
+  font-weight: 600;
+  padding-bottom: 30px;
+  font-family: "Poppins";
+}
+.web-app-main-menu-item .web-app-main-navigation li a.active {
+  color: #fc5a84;
+}
+.web-app-main-menu-item .web-app-header-btn {
+  height: 55px;
+  width: 170px;
+  line-height: 55px;
+  margin-left: 45px;
+  background-color: #fc5a84;
+  transition: 0.3s all ease-in-out;
+}
+.web-app-main-menu-item .web-app-header-btn a {
+  color: #fff;
+  width: 100%;
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s all ease-in-out;
+}
+.web-app-main-menu-item .web-app-header-btn:hover {
+  background-color: #179af0;
+}
+.web-app-main-menu-item .web-app-header-btn:hover a {
+  color: #fff;
+}
+
+.web-app-sticky-menu {
+  top: 0px;
+  position: fixed;
+  padding: 10px 0px;
+  animation-duration: 0.7s;
+  background-color: #fff;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-timing-function: ease;
+  transition: 0.3s all ease-in-out;
+  box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+}
+.web-app-sticky-menu .web-app-main-menu-item .web-app-main-navigation {
+  padding-top: 15px;
+}
+
+.web-app-main-header .web-app-mobile_menu_content {
+  top: 0px;
+  bottom: 0;
+  right: -350px;
+  height: 100vh;
+  z-index: 101;
+  position: fixed;
+  width: 280px;
+  overflow-y: scroll;
+  background-color: #1b0234;
+  padding: 40px 0px;
+  box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.19);
+  transition: all 0.5s ease-in;
+}
+.web-app-main-header .web-app-mobile_menu_content .web-app-mobile-main-navigation {
+  width: 100%;
+}
+.web-app-main-header .web-app-mobile_menu_content .web-app-mobile-main-navigation .navbar-nav {
+  width: 100%;
+}
+.web-app-main-header .web-app-mobile_menu_content .navbar-nav .dropdown-menu {
+  position: static !important;
+  transform: none !important;
+}
+.web-app-main-header .web-app-mobile_menu_content .web-app-mobile-main-navigation .navbar-nav li {
+  width: 100%;
+  display: block;
+  transition: 0.3s all ease-in-out;
+  border-bottom: 1px solid #36125a;
+}
+.web-app-main-header .web-app-mobile_menu_content .web-app-mobile-main-navigation .navbar-nav li:first-child {
+  border-bottom: 1px solid #36125a;
+}
+.web-app-main-header .web-app-mobile_menu_content .web-app-mobile-main-navigation .navbar-nav li a {
+  color: #afafaf;
+  padding: 0;
+  width: 100%;
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 30px;
+  font-family: "Poppins";
+  text-transform: uppercase;
+}
+.web-app-main-header .web-app-mobile_menu_content .m-brand-logo {
+  width: 160px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.web-app-main-header .web-app-mobile_menu_wrap.mobile_menu_on .web-app-mobile_menu_content {
+  right: 0px;
+  transition: all 0.7s ease-out;
+}
+.web-app-main-header .mobile_menu_overlay {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  right: 0%;
+  height: 120vh;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: all 0.5s ease-in-out;
+}
+.web-app-main-header .mobile_menu_overlay_on {
+  overflow: hidden;
+}
+.web-app-main-header .web-app-mobile_menu_wrap.mobile_menu_on .mobile_menu_overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.web-app-main-header .web-app-mobile_menu_button {
+  right: 0;
+  top: -40px;
+  z-index: 5;
+  color: #02e079;
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+}
+.web-app-main-header .web-app-mobile_menu .web-app-mobile-main-navigation .navbar-nav li a:after {
+  display: none;
+}
+.web-app-main-header .web-app-mobile_menu .web-app-mobile-main-navigation .dropdown > .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.web-app-main-header .web-app-mobile_menu .web-app-mobile_menu_content .web-app-mobile-main-navigation .navbar-nav .dropdown-menu {
+  border: none;
+  display: none;
+  transition: none;
+  box-shadow: none;
+  padding: 5px 0px;
+  width: 100%;
+  background-color: transparent;
+}
+.web-app-main-header .web-app-mobile_menu .web-app-mobile_menu_content .web-app-mobile-main-navigation .navbar-nav .dropdown-menu li {
+  border: none;
+  padding: 0 20px;
+  line-height: 1;
+}
+.web-app-main-header .web-app-mobile_menu .dropdown {
+  position: relative;
+}
+.web-app-main-header .web-app-mobile_menu .dropdown .dropdown-btn {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  height: 30px;
+  color: #afafaf;
+  line-height: 22px;
+  padding: 5px 10px;
+  border: 1px solid #480b86;
+}
+.web-app-main-header .web-app-mobile_menu .dropdown:after {
+  display: none;
+}
+.web-app-main-header .web-app-mobile_menu .web-app-mobile_menu_close {
+  color: #d60606;
+  cursor: pointer;
+  top: 15px;
+  left: 15px;
+  font-size: 20px;
+  position: absolute;
+}
+
+/*---------------------------------------------------- */
+/*Banner area*/
+/*----------------------------------------------------*/
+@keyframes man-updown {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes man-updown {
+  0% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(-1px);
+  }
+}
+@keyframes man-updown {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+.web-app-banner-section .cd-words-wrapper {
+  position: relative;
+  text-align: left;
+}
+.web-app-banner-section .cd-words-wrapper b {
+  top: 0;
+  position: absolute;
+  white-space: nowrap;
+  display: inline-block;
+}
+.web-app-banner-section .cd-words-wrapper b.is-visible {
+  position: relative;
+}
+.web-app-banner-section .no-js .cd-words-wrapper b {
+  opacity: 0;
+}
+.web-app-banner-section .no-js .cd-words-wrapper b.is-visible {
+  opacity: 1;
+}
+.web-app-banner-section .cd-headline.push b {
+  opacity: 0;
+}
+.web-app-banner-section .cd-headline.push b.is-visible {
+  opacity: 1;
+  animation: push-in 0.6s;
+}
+.web-app-banner-section .cd-headline.push b.is-hidden {
+  animation: push-out 0.6s;
+}
+@keyframes push-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes push-out {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  60% {
+    opacity: 0;
+    transform: translateX(110%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+.web-app-banner-section .shape-1 {
+  left: 150px;
+  bottom: 220px;
+}
+.web-app-banner-section .shape-3 {
+  left: 50%;
+  top: 145px;
+}
+.web-app-banner-section .shape-2 {
+  top: 160px;
+  right: 150px;
+}
+
+.web-app-banner-text {
+  overflow: hidden;
+  max-width: 580px;
+  padding: 240px 0px 270px;
+}
+.web-app-banner-text h1 {
+  color: #1b2153;
+  font-size: 58px;
+  font-weight: 600;
+  position: relative;
+  line-height: 1.167;
+  padding-bottom: 25px;
+}
+.web-app-banner-text h1 span {
+  font-weight: 200;
+}
+.web-app-banner-text h1:before {
+  left: 3px;
+  top: -20px;
+  height: 4px;
+  width: 38px;
+  content: "";
+  position: absolute;
+  background: linear-gradient(-145deg, #febfbf 0%, #fa5db1 100%);
+}
+.web-app-banner-text p {
+  color: #2c2f4e;
+  font-size: 21px;
+}
+.web-app-banner-text p span {
+  font-weight: 700;
+}
+.web-app-banner-text .web-app-banner-form {
+  max-width: 475px;
+  margin: 40px 0px 25px;
+}
+.web-app-banner-text .web-app-banner-form input {
+  width: 100%;
+  height: 60px;
+  padding-left: 20px;
+  border: 2px solid #e6ecfa;
+}
+.web-app-banner-text .web-app-banner-form button {
+  top: 0;
+  right: 0;
+  color: #fff;
+  height: 60px;
+  width: 180px;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  position: absolute;
+  background-color: #179af0;
+  transition: 0.3s all ease-in-out;
+}
+.web-app-banner-text .web-app-banner-form button:hover {
+  background-color: #22d38c;
+}
+.web-app-banner-text .web-app-banner-slug span {
+  color: #2c2f4e;
+  font-size: 15px;
+  padding-left: 16px;
+  margin-right: 30px;
+  position: relative;
+}
+.web-app-banner-text .web-app-banner-slug span:before {
+  left: 0;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  background-color: #2af039;
+}
+
+.web-app-banner-vector {
+  top: 120px;
+  right: -70px;
+}
+.web-app-banner-vector .web-app-banner-vector-img-2 {
+  bottom: 0;
+  left: 0;
+  animation: man-updown 2s infinite alternate;
+}
+.web-app-banner-vector .web-app-banner-vector-img-3 {
+  bottom: -85px;
+  right: -180px;
+  animation: man-updown 3s infinite alternate;
+}
+
+/*---------------------------------------------------- */
+/*Feature area*/
+/*----------------------------------------------------*/
+@keyframes web-app-floating {
+  from {
+    transform: rotate(0deg) translate(-10px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(-10px) rotate(-360deg);
+  }
+}
+.web-app-feature-content {
+  padding: 80px 0px 50px;
+  border-bottom: 1px solid #def0f7;
+}
+
+.web-app-feature-innerbox {
+  padding: 0px 45px;
+  margin-bottom: 30px;
+}
+.web-app-feature-innerbox .web-app-feature-icon {
+  z-index: 1;
+  padding-left: 40px;
+  margin-bottom: 38px;
+  max-width: 160px;
+  transition: all 0.35s cubic-bezier(0.38, 3, 0.57, 1.6);
+  transform: translate3d(0px, 0, 0);
+}
+.web-app-feature-innerbox .web-app-feature-icon:before {
+  left: 40px;
+  top: -15px;
+  z-index: -1;
+  content: "";
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: #ebf7fc;
+}
+.web-app-feature-innerbox .web-app-feature-icon .web-app-f-shape {
+  transition: all 2s ease;
+  animation-name: web-app-floating;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: 50% 1px;
+}
+.web-app-feature-innerbox .web-app-feature-icon .shape1 {
+  top: -20px;
+  left: 15px;
+  animation-duration: 7s;
+  transition-delay: 0.7s;
+}
+.web-app-feature-innerbox .web-app-feature-icon .shape2 {
+  right: 0;
+  top: 20px;
+  animation-duration: 5s;
+  transition-delay: 0.1s;
+}
+.web-app-feature-innerbox .web-app-feature-icon .shape3 {
+  left: 8px;
+  bottom: 0;
+  animation-duration: 8s;
+  transition-delay: 0.3s;
+}
+.web-app-feature-innerbox .web-app-feature-text h3 {
+  color: #1b2153;
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 24px;
+}
+.web-app-feature-innerbox:hover .web-app-feature-icon {
+  transition: all 0.35s cubic-bezier(0.38, 3, 0.57, 1.6);
+  transform: translate3d(0px, -6px, 0);
+}
+
+/*---------------------------------------------------- */
+/*Fun fact area*/
+/*----------------------------------------------------*/
+.web-app-fun-fact-section {
+  padding: 65px 0px;
+}
+
+.web-app-fun-fact-number span,
+.web-app-fun-fact-number strong {
+  line-height: 1;
+  color: #1b2153;
+  font-size: 48px;
+  font-weight: 700;
+}
+.web-app-fun-fact-number strong {
+  top: 10px;
+  position: relative;
+}
+.web-app-fun-fact-number p {
+  color: #001737;
+  font-size: 20px;
+  margin-left: 15px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+/*---------------------------------------------------- */
+/*About area*/
+/*----------------------------------------------------*/
+@keyframes toLeftFromRight {
+  49% {
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+.web-app-about-section {
+  padding: 100px 0px 140px;
+  background-color: #f9fafa;
+}
+
+.web-app-about-text-img .web-app-about-text {
+  padding-top: 40px;
+}
+.web-app-about-text-img .web-app-about-text .web-app-about-txt-content {
+  font-size: 17px;
+  margin: 18px 0px 40px;
+}
+.web-app-about-text-img .web-app-about-img-content .web-about-img-1 {
+  max-width: 565px;
+  border-radius: 30px;
+  box-shadow: 13.766px 19.66px 69px 0px rgba(28, 33, 54, 0.07);
+}
+.web-app-about-text-img .web-app-about-img-content .web-about-img-2 {
+  top: auto;
+  bottom: -75px;
+  right: 55px;
+  border-radius: 35px;
+  box-shadow: 0px 10px 20px 0px rgba(12, 10, 42, 0.11);
+}
+.web-app-about-text-img.web-app-about-left-img {
+  margin-bottom: 90px;
+}
+.web-app-about-text-img.web-app-about-left-img .web-app-about-img-content {
+  padding-left: 40px;
+}
+.web-app-about-text-img.web-app-about-left-img .web-app-about-img-content .web-about-img-2 {
+  top: -30px;
+  right: 25px;
+  bottom: auto;
+}
+.web-app-about-text-img.web-app-about-left-img .web-app-about-btn {
+  background-color: #fc5a84;
+}
+
+.web-app-download-section {
+  overflow: visible;
+  background-color: #fafbfb;
+}
+.web-app-download-section .web-app-download-img {
+  top: 0;
+  left: 30px;
+  position: absolute;
+  animation: man-updown 2s infinite alternate;
+}
+
+.web-app-download-text {
+  padding: 100px 0px 110px 70px;
+}
+.web-app-download-text p {
+  padding: 28px 50px 35px 0px;
+}
+
+/*---------------------------------------------------- */
+/*testimonial area*/
+/*----------------------------------------------------*/
+.web-app-testimonial-section {
+  padding: 100px 0px 90px;
+}
+.web-app-testimonial-section .web-app-testimonial-side-img {
+  top: 65px;
+  right: 70px;
+  position: absolute;
+}
+.web-app-testimonial-section .web-app-testimonial-slider-wrap {
+  max-width: 520px;
+  padding-top: 65px;
+  padding-left: 25px;
+  overflow: hidden;
+}
+.web-app-testimonial-section .web-app-testimonial-slider-wrap .owl-nav {
+  display: none;
+}
+.web-app-testimonial-section .web-app-testimonial-slider-wrap .owl-stage-outer {
+  overflow: visible;
+}
+.web-app-testimonial-section .web-app-testimonial-slider-wrap .owl-item {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.web-app-testimonial-section .web-app-testimonial-slider-wrap .owl-item.active {
+  opacity: 1;
+}
+.web-app-testimonial-section .web-app-testimonial-slider-wrap .owl-dots {
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+.web-app-testimonial-section .web-app-testimonial-slider-wrap .owl-dots .owl-dot {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  margin: 5px 0px;
+  border-radius: 100%;
+  background-color: #dfe1f1;
+}
+.web-app-testimonial-section .web-app-testimonial-slider-wrap .owl-dots .owl-dot.active {
+  background-color: #22d38c;
+}
+
+.web-app-testimonial-img-text:before {
+  top: -10px;
+  left: -10px;
+  line-height: 1;
+  content: "";
+  font-weight: 700;
+  font-size: 20px;
+  font-weight: 900;
+  position: absolute;
+  color: #22d38c;
+  font-family: "Font Awesome 5 Free";
+}
+.web-app-testimonial-img-text .web-app-testimonial-img {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-radius: 100%;
+  border: 5px solid #fff;
+  box-shadow: 0px 16px 32px 0px rgba(0, 51, 120, 0.1);
+}
+.web-app-testimonial-img-text .web-app-testimonial-text p {
+  font-size: 20px;
+  max-width: 475px;
+}
+.web-app-testimonial-img-text .web-app-testimonial-text .web-app-testimonial-author {
+  margin-top: 48px;
+}
+.web-app-testimonial-img-text .web-app-testimonial-text .web-app-testimonial-author h4 {
+  color: #1b2153;
+  font-size: 24px;
+  font-weight: 600;
+}
+.web-app-testimonial-img-text .web-app-testimonial-text .web-app-testimonial-author span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fc5a84;
+}
+
+/*---------------------------------------------------- */
+/*pricing area*/
+/*----------------------------------------------------*/
+.web-app-pricing-section {
+  padding: 150px 0px 85px;
+}
+
+.web-app-pricing-plan-item {
+  padding-top: 60px;
+}
+.web-app-pricing-plan-item .web-app-pricing-plan-tab-btn {
+  margin-bottom: 65px;
+}
+.web-app-pricing-plan-item .web-app-pricing-plan-tab-btn .nav {
+  display: block;
+}
+.web-app-pricing-plan-item .web-app-pricing-plan-tab-btn .nav-tabs .nav-item.show .nav-link,
+.web-app-pricing-plan-item .web-app-pricing-plan-tab-btn .nav-tabs .nav-link.active,
+.web-app-pricing-plan-item .web-app-pricing-plan-tab-btn .nav-tabs .nav-link {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+.web-app-pricing-plan-item .web-app-pricing-plan-tab-btn .nav-tabs {
+  border: none;
+}
+.web-app-pricing-plan-item .web-app-pricing-plan-tab-btn li a {
+  height: 65px;
+  width: 170px;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 65px;
+  color: #fc5a84;
+  text-align: center;
+  transition: 0.3s all ease-in-out;
+  box-shadow: 0px 4px 16px 0px rgba(37, 128, 255, 0.06);
+}
+.web-app-pricing-plan-item .web-app-pricing-plan-tab-btn li a.active {
+  color: #fff;
+  background-color: #fc5a84;
+}
+
+.web-app-pricing-plan {
+  margin: 0 auto;
+  max-width: 315px;
+  padding: 45px 0px;
+  transition: 0.3s all ease-in-out;
+  box-shadow: 0px 0px 20px 0px rgba(1, 26, 44, 0.05);
+}
+.web-app-pricing-plan .web-app-pricing-title h3 {
+  color: #1b2153;
+  font-size: 26px;
+  font-weight: 700;
+  font-family: "Roboto";
+  transition: 0.3s all ease-in-out;
+}
+.web-app-pricing-plan .web-app-pricing-title span {
+  font-size: 19px;
+  color: #179af0;
+  transition: 0.3s all ease-in-out;
+}
+.web-app-pricing-plan .web-app-pricing-price {
+  color: #1b2153;
+  line-height: 1;
+  font-size: 63px;
+  font-weight: 700;
+  font-family: "Poppins";
+  margin: 15px 0px 25px;
+  transition: 0.3s all ease-in-out;
+}
+.web-app-pricing-plan .web-app-pricing-price span {
+  top: -20px;
+  font-size: 25px;
+  position: relative;
+}
+.web-app-pricing-plan .web-app-pricing-content li {
+  color: #818992;
+  margin-bottom: 12px;
+  transition: 0.3s all ease-in-out;
+}
+.web-app-pricing-plan .web-app-price-btn {
+  height: 50px;
+  width: 195px;
+  margin: 0 auto;
+  margin-top: 30px;
+  line-height: 50px;
+  border: 2px solid #179af0;
+  transition: 0.3s all ease-in-out;
+}
+.web-app-pricing-plan .web-app-price-btn a {
+  width: 100%;
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #179af0;
+}
+.web-app-pricing-plan:hover {
+  background-color: #179af0;
+}
+.web-app-pricing-plan:hover .web-app-pricing-title h3 {
+  color: #fff;
+}
+.web-app-pricing-plan:hover .web-app-pricing-title span {
+  color: #fff;
+}
+.web-app-pricing-plan:hover .web-app-pricing-price {
+  color: #fff;
+}
+.web-app-pricing-plan:hover .web-app-pricing-content li {
+  color: #fff;
+}
+.web-app-pricing-plan:hover .web-app-price-btn {
+  background-color: #fff;
+}
+
+/*---------------------------------------------------- */
+/*newslatter area*/
+/*----------------------------------------------------*/
+.web-app-newslatter-section {
+  padding: 145px 0px;
+}
+
+.web-app-newslatter-content {
+  z-index: 1;
+}
+.web-app-newslatter-content .web-app-newslatter-bg {
+  left: 0;
+  right: 0;
+  top: -145px;
+  z-index: -1;
+  text-align: center;
+}
+
+.web-app-newslatter-wrap .web-app-section-title {
+  margin-bottom: 45px;
+}
+.web-app-newslatter-wrap .web-app-section-title h2 {
+  font-size: 48px;
+  padding-bottom: 10px;
+}
+.web-app-newslatter-wrap .web-app-section-title p {
+  color: #001737;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 1.5;
+  max-width: 700px;
+}
+.web-app-newslatter-wrap .web-app-newslatter-form {
+  max-width: 715px;
+  margin: 0 auto;
+}
+.web-app-newslatter-wrap .web-app-newslatter-form input {
+  width: 100%;
+  height: 75px;
+  border: none;
+  padding-left: 30px;
+  box-shadow: 0px 0px 20px 0px rgba(1, 26, 44, 0.05);
+}
+.web-app-newslatter-wrap .web-app-newslatter-form button {
+  top: 0;
+  right: 0;
+  color: #fff;
+  height: 75px;
+  width: 240px;
+  border: none;
+  font-weight: 700;
+  position: absolute;
+  background-color: #22d38c;
+  transition: 0.3s all ease-in-out;
+}
+.web-app-newslatter-wrap .web-app-newslatter-form button:hover {
+  background-color: #179af0;
+}
+
+/*---------------------------------------------------- */
+/*footer area*/
+/*----------------------------------------------------*/
+.web-app-footer-top-content {
+  padding-bottom: 60px;
+  margin-bottom: 60px;
+  border-bottom: 2px solid #f1f1f1;
+}
+
+.web-app-footer-contact span {
+  color: #102465;
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 40px;
+}
+.web-app-footer-contact a {
+  width: 60px;
+  height: 60px;
+  color: #102465;
+  margin-right: 8px;
+  line-height: 60px;
+  text-align: center;
+  z-index: 1;
+  border-radius: 100%;
+  position: relative;
+  display: inline-block;
+  background-color: #f1f9fc;
+  transition: 0.3s all ease-in-out;
+}
+.web-app-footer-contact a:hover {
+  color: #fff;
+  background-color: #179af0;
+}
+
+.web-app-footer-top-menu {
+  float: right;
+  padding-top: 20px;
+}
+.web-app-footer-top-menu li {
+  margin-left: 50px;
+}
+.web-app-footer-top-menu li a {
+  color: #102465;
+  font-weight: 700;
+  transition: 0.3s all ease-in-out;
+}
+.web-app-footer-top-menu li a:hover {
+  color: #fc5a84;
+}
+
+.web-app-footer-section {
+  padding: 100px 0px 50px;
+}
+.web-app-footer-section .soft-footer-btn {
+  height: 60px;
+  width: 200px;
+  margin-top: 30px;
+  line-height: 60px;
+  border-radius: 40px;
+  background-color: #fc5a84;
+  transition: 0.3s all ease-in-out;
+}
+.web-app-footer-section .soft-footer-btn a {
+  width: 100%;
+  color: #fff;
+  display: block;
+}
+.web-app-footer-section .soft-footer-btn:hover {
+  background-color: #179af0;
+}
+.web-app-footer-section .web-app-footer-menu-widget {
+  float: left;
+  width: 33.33%;
+}
+.web-app-footer-section .web-app-footer-menu-widget .web-app-footer-store a {
+  display: block;
+  margin-bottom: 5px;
+}
+.web-app-footer-section .web-app-footer-widget {
+  color: #bdc4df;
+}
+.web-app-footer-section .web-app-footer-widget .widget-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #003378;
+  padding-bottom: 35px;
+}
+.web-app-footer-section .web-app-footer-widget .web-app-footer-support {
+  color: #6c8493;
+}
+.web-app-footer-section .web-app-footer-widget .web-app-footer-support:before {
+  top: -2px;
+  width: 1px;
+  background-color: #f1f1f1;
+}
+.web-app-footer-section .web-app-footer-widget .web-app-footer-support a {
+  color: #003378;
+}
+.web-app-footer-section .web-app-footer-widget p {
+  color: #6c8493;
+  max-width: 280px;
+  padding-top: 38px;
+}
+.web-app-footer-section .web-app-footer-widget p a {
+  font-weight: 700;
+  color: #003378;
+}
+.web-app-footer-section .web-app-footer-widget .web-app-footer-menu-widget a {
+  display: block;
+  margin-bottom: 18px;
+  color: #6c8493;
+  transition: 0.3s all ease-in-out;
+}
+.web-app-footer-section .web-app-footer-widget .web-app-footer-menu-widget a:hover {
+  color: #fc5a84;
+}
+
+/*---------------------------------------------------- */
+/*Responsive area*/
+/*----------------------------------------------------*/
+@media screen and (max-width: 1440px) {
+  .web-app-testimonial-section .web-app-testimonial-side-img {
+    right: -20%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .web-app-testimonial-section .web-app-testimonial-side-img {
+    right: -25%;
+  }
+
+  .web-app-banner-text h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .web-app-feature-innerbox {
+    padding: 0;
+  }
+
+  .web-app-testimonial-section .web-app-testimonial-side-img {
+    right: -40%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .web-app-banner-vector {
+    top: 0;
+    max-width: 570px;
+  }
+
+  .web-app-banner-text {
+    padding-bottom: 60px;
+  }
+
+  .web-app-banner-content {
+    margin-bottom: 70px;
+  }
+
+  .web-app-feature-innerbox {
+    margin-bottom: 50px;
+  }
+
+  .web-app-about-text-img .web-app-about-text {
+    margin: 0 auto;
+    max-width: 500px;
+    margin: 30px auto;
+  }
+
+  .web-app-about-text-img .web-app-about-img-content {
+    margin: 0 auto;
+    padding-left: 0;
+    max-width: 625px;
+  }
+
+  .web-app-testimonial-section .web-app-testimonial-side-img {
+    position: static;
+  }
+
+  .web-app-testimonial-section .web-app-section-title {
+    text-align: center;
+  }
+
+  .web-app-testimonial-section .web-app-testimonial-slider-wrap {
+    margin: 0 auto;
+  }
+
+  .web-app-download-section .web-app-download-img {
+    position: static;
+    text-align: center;
+  }
+
+  .web-app-download-text {
+    margin: 0 auto;
+    max-width: 570px;
+  }
+
+  .web-app-pricing-plan {
+    margin-bottom: 30px;
+  }
+
+  .web-app-footer-top-menu li {
+    margin-left: 25px;
+  }
+
+  .web-app-logo-widget {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .web-app-main-menu-item .web-app-main-navigation li {
+    margin: 0px 12px;
+  }
+
+  .web-app-main-menu-item .web-app-header-btn {
+    margin-left: 15px;
+  }
+
+  .web-app-main-menu-item .web-app-header-btn {
+    width: 105px;
+  }
+  .web-app-main-menu-item .web-app-header-btn a {
+    font-size: 14px;
+  }
+
+  .web-app-newslatter-wrap .web-app-section-title h2 {
+    font-size: 36px;
+  }
+
+  .web-app-footer-contact span {
+    margin-right: 10px;
+  }
+
+  .web-app-footer-contact a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .web-app-footer-top-menu li {
+    margin-left: 8px;
+    font-size: 14px;
+  }
+
+  .web-app-footer-top-menu {
+    padding-top: 7px;
+  }
+
+  .web-app-newslatter-section {
+    padding: 100px 0px 70px;
+  }
+
+  .web-app-footer-top-menu {
+    float: none;
+  }
+  .web-app-footer-top-menu li {
+    margin-left: 0;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .web-app-main-menu-item .web-app-main-navigation {
+    display: none;
+  }
+
+  .web-app-main-menu-item .web-app-header-btn {
+    height: 45px;
+    line-height: 45px;
+    margin-right: 55px;
+  }
+
+  .web-app-main-header .web-app-mobile_menu_button {
+    display: block;
+  }
+
+  .web-app-main-header {
+    padding-top: 20px;
+  }
+
+  .web-app-banner-vector {
+    right: 0;
+  }
+
+  .web-app-sticky-menu {
+    top: -10px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .web-app-banner-text {
+    padding-top: 180px;
+  }
+
+  .web-app-section-title h2 {
+    font-size: 30px;
+  }
+
+  .web-app-footer-section .web-app-footer-menu-widget {
+    width: 100%;
+  }
+
+  .web-app-footer-section .web-app-footer-widget .widget-title {
+    padding-bottom: 20px;
+  }
+
+  .web-app-footer-section .web-app-footer-menu-widget {
+    margin-bottom: 30px;
+  }
+
+  .web-app-about-text-img.web-app-about-left-img .web-app-about-img-content {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .web-app-banner-text h1 {
+    font-size: 40px;
+  }
+
+  .web-app-banner-text p {
+    font-size: 18px;
+  }
+
+  .web-app-banner-text .web-app-banner-form button {
+    width: 130px;
+  }
+
+  .web-app-section-title h2 {
+    font-size: 24px;
+  }
+
+  .web-app-feature-content {
+    padding: 40px 0px 20px;
+  }
+
+  .web-app-fun-fact-number span,
+.web-app-fun-fact-number strong {
+    font-size: 36px;
+  }
+
+  .web-app-fun-fact-number strong {
+    top: 5px;
+  }
+
+  .web-app-fun-fact-number p {
+    font-size: 18px;
+  }
+
+  .web-app-fun-fact-section {
+    padding: 40px 0px;
+  }
+
+  .web-app-about-section {
+    padding: 30px 0px;
+  }
+
+  .web-app-about-text-img .web-app-about-text {
+    margin-top: 0;
+  }
+
+  .web-app-about-text-img .web-app-about-img-content .web-about-img-2 {
+    display: none;
+  }
+
+  .web-app-about-text-img.web-app-about-left-img {
+    margin-bottom: 40px;
+  }
+
+  .web-app-download-text .web-app-about-btn,
+.web-app-about-text-img .web-app-about-text .web-app-about-btn {
+    width: 155px;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .web-app-testimonial-section {
+    padding: 50px 0px 40px;
+  }
+
+  .web-app-testimonial-img-text .web-app-testimonial-text p {
+    font-size: 18px;
+  }
+
+  .web-app-testimonial-img-text .web-app-testimonial-text .web-app-testimonial-author h4 {
+    font-size: 20px;
+  }
+
+  .web-app-testimonial-img-text .web-app-testimonial-text .web-app-testimonial-author {
+    margin-top: 20px;
+  }
+
+  .web-app-download-text {
+    padding: 50px 0px;
+  }
+
+  .web-app-pricing-section {
+    padding: 50px 0px 30px;
+  }
+
+  .web-app-pricing-plan .web-app-pricing-price {
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+
+  .web-app-pricing-plan-item .web-app-pricing-plan-tab-btn li a {
+    height: 55px;
+    width: 140px;
+    line-height: 55px;
+    font-size: 16px;
+  }
+
+  .web-app-newslatter-wrap .web-app-section-title h2 {
+    font-size: 30px;
+  }
+
+  .web-app-newslatter-wrap .web-app-newslatter-form button {
+    width: 120px;
+    font-size: 14px;
+  }
+
+  .web-app-newslatter-section {
+    padding: 50px 0px 20px;
+  }
+
+  .web-app-footer-section {
+    padding: 50px 0px 20px;
+  }
+
+  .web-app-footer-section .soft-footer-btn {
+    height: 50px;
+    line-height: 50px;
+    width: 150px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .web-app-banner-text h1 {
+    font-size: 35px;
+  }
+
+  .web-app-section-title h2 {
+    font-size: 22px;
+  }
+
+  .web-app-footer-contact span {
+    font-size: 16px;
+  }
+
+  .web-app-footer-contact a {
+    margin-right: 5px;
+  }
+
+  .web-app-newslatter-wrap .web-app-section-title p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .web-app-banner-text h1 {
+    font-size: 30px;
+  }
+}
+/*---------------------------------------------------- */

@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("../fonts-7/flaticon.ttf?545aca43583bdd3d79a56e6d456c600e") format("truetype"),
+url("../fonts-7/flaticon.woff?545aca43583bdd3d79a56e6d456c600e") format("woff"),
+url("../fonts-7/flaticon.woff2?545aca43583bdd3d79a56e6d456c600e") format("woff2"),
+url("../fonts-7/flaticon.eot?545aca43583bdd3d79a56e6d456c600e#iefix") format("embedded-opentype"),
+url("../fonts-7/flaticon.svg?545aca43583bdd3d79a56e6d456c600e#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-menu:before {
+    content: "\f101";
+}
+.flaticon-menu-1:before {
+    content: "\f102";
+}
+.flaticon-right-arrow:before {
+    content: "\f103";
+}
+.flaticon-accounting:before {
+    content: "\f104";
+}
+.flaticon-analysis:before {
+    content: "\f105";
+}
+.flaticon-money:before {
+    content: "\f106";
+}
+.flaticon-financial-database:before {
+    content: "\f107";
+}
+.flaticon-online-registration:before {
+    content: "\f108";
+}
+.flaticon-project-management:before {
+    content: "\f109";
+}
+.flaticon-quality:before {
+    content: "\f10a";
+}
+.flaticon-consultant:before {
+    content: "\f10b";
+}
+.flaticon-hands-and-gestures:before {
+    content: "\f10c";
+}
+.flaticon-twitter:before {
+    content: "\f10d";
+}
+.flaticon-instagram:before {
+    content: "\f10e";
+}
+.flaticon-facebook:before {
+    content: "\f10f";
+}
+.flaticon-website:before {
+    content: "\f110";
+}
+.flaticon-design:before {
+    content: "\f111";
+}
+.flaticon-one:before {
+    content: "\f112";
+}
+.flaticon-money-1:before {
+    content: "\f113";
+}
+.flaticon-consultation:before {
+    content: "\f114";
+}
+.flaticon-contract:before {
+    content: "\f115";
+}
+.flaticon-search:before {
+    content: "\f116";
+}
+.flaticon-restructure:before {
+    content: "\f117";
+}
+.flaticon-customer-support:before {
+    content: "\f118";
+}
+.flaticon-right-arrow-1:before {
+    content: "\f119";
+}
+.flaticon-target:before {
+    content: "\f11a";
+}
+.flaticon-project-management-1:before {
+    content: "\f11b";
+}
+.flaticon-speaker:before {
+    content: "\f11c";
+}
+.flaticon-speaker-1:before {
+    content: "\f11d";
+}
+.flaticon-administration:before {
+    content: "\f11e";
+}
+.flaticon-add:before {
+    content: "\f11f";
+}
+.flaticon-quotes:before {
+    content: "\f120";
+}
+.flaticon-arrow:before {
+    content: "\f121";
+}

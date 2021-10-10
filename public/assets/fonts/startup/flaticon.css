@@ -1,0 +1,40 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 15/06/2020 14:18
+  	*/
+
+    @font-face {
+      font-family: "Flaticon";
+      src: url("../fonts/Flaticon.eot");
+      src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/Flaticon.woff2") format("woff2"),
+      url("../fonts/Flaticon.woff") format("woff"),
+      url("../fonts/Flaticon.ttf") format("truetype"),
+      url("../fonts/Flaticon.svg#Flaticon") format("svg");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+      @font-face {
+        font-family: "Flaticon";
+        src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+      }
+    }
+
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+    [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+      font-family: Flaticon;
+      font-style: normal;
+    }
+
+    .flaticon-null:before { content: "\f100"; }
+    .flaticon-null-1:before { content: "\f101"; }
+    .flaticon-null-2:before { content: "\f102"; }
+    .flaticon-right-arrow:before { content: "\f103"; }
+    .flaticon-black-and-white-credit-cards:before { content: "\f104"; }
+    .flaticon-download:before { content: "\f105"; }
+    .flaticon-settings:before { content: "\f106"; }
+    .flaticon-null-6:before { content: "\f107"; }
+    .flaticon-null-7:before { content: "\f108"; }
+    .flaticon-null-8:before { content: "\f109"; }

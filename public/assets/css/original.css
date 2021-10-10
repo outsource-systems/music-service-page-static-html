@@ -1,0 +1,125 @@
+.left-list {
+    list-style: none;
+    text-align: left;
+}
+
+.eight-section-title h2 {
+    font-size: 2rem;
+}
+
+.eight-banner-section .eight-banner-content h1 {
+    font-size: 2rem;
+}
+
+.eight-banner-section .eight-banner-content .banner-content-box .ei-banner-btn .fas {
+    color: white !important;
+}
+
+.main-header-eight .nav-link {
+    color: black;
+}
+
+.site-logo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.site-logo a {
+    display: flex;
+    height: 40px;
+}
+
+.site-logo img {
+    height: 40px;
+    padding: 5px 10px 5px 0px;
+}
+
+.cd-words-wrapper {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.appi-ei-open_mobile_menu .fas {
+    color: black;
+}
+
+.fa-spotify {
+  color: #1ED760;
+}
+
+.fa-youtube {
+  color: red;
+}
+
+.ei-service-icon .fas {
+    line-height: 108px;
+}
+
+.document-section h3, .document-section h4 {
+    font-weight: bold;
+}
+
+.original-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.original-form-section h3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-base-color {
+    background-color: #5271FF;
+    color: white;
+}
+
+.btn-base-color:hover {
+    background-color: #6b85fa;
+    color: white;
+    margin: 0 auto;
+}
+
+.admin-screan {
+    max-width: 370px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+ .admin-screan img {
+    margin: 0 auto;
+}
+
+.ei-service-slide-mbl {
+    margin: 0 auto;
+}
+
+.admin-screan-content {
+    height: 600px;
+}
+
+@media screen and (max-width: 767px) {
+  .eight-section-title h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.service-title {
+  color: white;
+  z-index: 10000000;
+}
+
+
+@media screen and (max-width: 991px) {
+    .service-title {
+      color: black;
+    }
+
+    .admin-screan {
+        position: relative;
+        top: 0;
+    }
+}

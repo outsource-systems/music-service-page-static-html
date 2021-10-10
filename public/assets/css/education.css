@@ -1,0 +1,1498 @@
+@charset "UTF-8";
+/*----------------------------------------------------
+@File: Default Styles
+@Author: 
+@URL: 
+
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+---------------------------------------------------- */
+/*=====================================================================
+@Template Name: 
+@Author:
+
+
+=====================================================================*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,500,700|Roboto:100,300,400,500,700&display=swap");
+@keyframes toLeftFromRight {
+  49% {
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+@keyframes fadeFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeFromUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fadeFromUp {
+  animation-name: fadeFromUp;
+}
+
+.fadeFromRight {
+  animation-name: fadeFromRight;
+}
+
+.fadeFromLeft {
+  animation-name: fadeFromLeft;
+}
+
+/*global area*/
+/*----------------------------------------------------*/
+.app-edu {
+  margin: 0;
+  padding: 0;
+  color: #373a5b;
+  font-size: 18px;
+  overflow-x: hidden;
+  line-height: 1.625;
+  font-family: "Roboto";
+  -moz-osx-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app-edu::selection {
+  color: #ffffff;
+  background-color: #6e3ebf;
+}
+
+.app-edu::-moz-selection {
+  color: #ffffff;
+  background-color: #6e3ebf;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.ul-li ul {
+  margin: 0;
+  padding: 0;
+}
+.ul-li ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.ul-li-block ul {
+  margin: 0;
+  padding: 0;
+}
+.ul-li-block ul li {
+  list-style: none;
+  display: block;
+}
+
+div#app-edu-preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background-color: #fff;
+  background: #fff url("../img/pre.svg") no-repeat center center;
+}
+
+[data-background] {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+.form-control:focus,
+button:visited,
+button.active,
+button:hover,
+button:focus,
+input:visited,
+input.active,
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus,
+a:hover,
+a:focus,
+a:visited,
+a.active,
+select,
+select:hover,
+select:focus,
+select:visited {
+  outline: none;
+  box-shadow: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.form-control {
+  box-shadow: none;
+}
+
+.pera-content p {
+  margin-bottom: 0;
+}
+
+.app-edu-headline h1,
+.app-edu-headline h2,
+.app-edu-headline h3,
+.app-edu-headline h4,
+.app-edu-headline h5,
+.app-edu-headline h6 {
+  margin: 0;
+  font-family: "Poppins";
+}
+
+.app-edu-scrollup {
+  width: 55px;
+  right: 20px;
+  z-index: 5;
+  height: 55px;
+  bottom: 20px;
+  display: none;
+  position: fixed;
+  line-height: 55px;
+  border-radius: 100%;
+  background-color: #930ce8;
+}
+.app-edu-scrollup i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.app-edu-section-title span {
+  font-weight: 700;
+  color: #930ce8;
+  font-family: "Poppins";
+}
+.app-edu-section-title h2 {
+  color: #111111;
+  font-size: 48px;
+  font-weight: 700;
+  padding: 5px 0px 28px;
+}
+.app-edu-section-title.center-align {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+/*---------------------------------------------------- */
+/*Header area*/
+/*----------------------------------------------------*/
+.app-edu-header-main {
+  left: 0;
+  width: 100%;
+  padding-top: 45px;
+  position: absolute;
+  font-family: "Poppins";
+}
+
+.app-edu-main-header-menu .navbar-nav {
+  display: inherit;
+}
+
+.app-edu-main-navigation {
+  padding-top: 15px;
+}
+.app-edu-main-navigation li {
+  margin-left: 35px;
+}
+.app-edu-main-navigation li a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  display: inline;
+  padding-bottom: 30px;
+}
+.app-edu-main-navigation li a.active {
+  color: #930ce8;
+}
+.app-edu-main-navigation .dropdown {
+  position: relative;
+}
+.app-edu-main-navigation .dropdown:after {
+  top: 1px;
+  color: #fff;
+  right: -15px;
+  content: "+";
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  transition: 0.3s all ease-in-out;
+}
+.app-edu-main-navigation .dropdown .dropdown-menu {
+  top: 65px;
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+  margin: 0px;
+  padding: 0px;
+  height: auto;
+  width: 200px;
+  border: none;
+  display: block;
+  border-radius: 0;
+  overflow: hidden;
+  visibility: hidden;
+  position: absolute;
+  background-color: #fff;
+  transition: all 0.4s ease-in-out;
+  border-bottom: 2px solid #01e07b;
+  box-shadow: 0 5px 10px 0 rgba(83, 82, 82, 0.1);
+}
+.app-edu-main-navigation .dropdown .dropdown-menu li {
+  width: 100%;
+  margin-left: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.app-edu-main-navigation .dropdown .dropdown-menu li a {
+  width: 100%;
+  color: #343434;
+  display: block;
+  font-size: 14px;
+  padding: 10px 25px;
+  position: relative;
+  transition: 0.3s all ease-in-out;
+}
+.app-edu-main-navigation .dropdown .dropdown-menu li a:before {
+  display: none;
+}
+.app-edu-main-navigation .dropdown .dropdown-menu li a:after {
+  left: 10px;
+  top: 16px;
+  width: 8px;
+  height: 8px;
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  transform: scale(0);
+  background-color: #fff;
+  transition: 0.3s all ease-in-out;
+}
+.app-edu-main-navigation .dropdown .dropdown-menu li a:hover {
+  background-color: #01e07b;
+  color: #fff;
+}
+.app-edu-main-navigation .dropdown .dropdown-menu li a:hover:after {
+  transform: scale(1);
+}
+.app-edu-main-navigation .dropdown .dropdown-menu li:last-child {
+  border-bottom: none;
+}
+.app-edu-main-navigation .dropdown:hover .dropdown-menu {
+  top: 50px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.header-dia-cta-btn a {
+  height: 50px;
+  width: 170px;
+  line-height: 45px;
+  margin-left: 45px;
+  border-radius: 40px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  display: inline-block;
+  font-weight: 700;
+  transition: 500ms all ease-in-out;
+}
+.header-dia-cta-btn a:hover {
+  color: #000000;
+  background-color: #fff;
+}
+
+.app-edu-sticky-on {
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  padding: 10px 0px;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-timing-function: ease;
+  transition: 0.3s all ease-in-out;
+  background-image: linear-gradient(90deg, #5fbec1 0%, #66c2c1 50%, #7dd5b1 100%);
+}
+.app-edu-sticky-on .app-edu-main-navigation {
+  padding-top: 10px;
+}
+
+.app-edu-header-main .app-edu-mobile_menu_content {
+  top: 0px;
+  bottom: 0;
+  right: -350px;
+  height: 100vh;
+  z-index: 101;
+  position: fixed;
+  width: 280px;
+  overflow-y: scroll;
+  background-color: #1b0234;
+  padding: 40px 0px;
+  box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.19);
+  transition: all 0.5s ease-in;
+}
+.app-edu-header-main .app-edu-mobile_menu_content .app-edu-mobile-main-navigation {
+  width: 100%;
+}
+.app-edu-header-main .app-edu-mobile_menu_content .app-edu-mobile-main-navigation .navbar-nav {
+  width: 100%;
+}
+.app-edu-header-main .app-edu-mobile_menu_content .navbar-nav .dropdown-menu {
+  position: static !important;
+  transform: none !important;
+}
+.app-edu-header-main .app-edu-mobile_menu_content .app-edu-mobile-main-navigation .navbar-nav li {
+  width: 100%;
+  display: block;
+  transition: 0.3s all ease-in-out;
+  border-bottom: 1px solid #36125a;
+}
+.app-edu-header-main .app-edu-mobile_menu_content .app-edu-mobile-main-navigation .navbar-nav li:first-child {
+  border-bottom: 1px solid #36125a;
+}
+.app-edu-header-main .app-edu-mobile_menu_content .app-edu-mobile-main-navigation .navbar-nav li a {
+  color: #afafaf;
+  padding: 0;
+  width: 100%;
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 30px;
+  font-family: "Poppins";
+  text-transform: uppercase;
+}
+.app-edu-header-main .app-edu-mobile_menu_content .m-brand-logo {
+  width: 160px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.app-edu-header-main .app-edu-mobile_menu_wrap.mobile_menu_on .app-edu-mobile_menu_content {
+  right: 0px;
+  transition: all 0.7s ease-out;
+}
+.app-edu-header-main .mobile_menu_overlay {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  right: 0%;
+  height: 120vh;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: all 0.5s ease-in-out;
+}
+.app-edu-header-main .mobile_menu_overlay_on {
+  overflow: hidden;
+}
+.app-edu-header-main .app-edu-mobile_menu_wrap.mobile_menu_on .mobile_menu_overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.app-edu-header-main .app-edu-mobile_menu_button {
+  right: 0;
+  top: -40px;
+  z-index: 5;
+  color: #fff;
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+}
+.app-edu-header-main .app-edu-mobile_menu .app-edu-mobile-main-navigation .navbar-nav li a:after {
+  display: none;
+}
+.app-edu-header-main .app-edu-mobile_menu .app-edu-mobile-main-navigation .dropdown > .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.app-edu-header-main .app-edu-mobile_menu .app-edu-mobile_menu_content .app-edu-mobile-main-navigation .navbar-nav .dropdown-menu {
+  border: none;
+  display: none;
+  transition: none;
+  box-shadow: none;
+  padding: 5px 0px;
+  width: 100%;
+  background-color: transparent;
+}
+.app-edu-header-main .app-edu-mobile_menu .app-edu-mobile_menu_content .app-edu-mobile-main-navigation .navbar-nav .dropdown-menu li {
+  border: none;
+  padding: 0 20px;
+  line-height: 1;
+}
+.app-edu-header-main .app-edu-mobile_menu .dropdown {
+  position: relative;
+}
+.app-edu-header-main .app-edu-mobile_menu .dropdown .dropdown-btn {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  height: 30px;
+  color: #afafaf;
+  line-height: 22px;
+  padding: 5px 10px;
+  border: 1px solid #480b86;
+}
+.app-edu-header-main .app-edu-mobile_menu .dropdown:after {
+  display: none;
+}
+.app-edu-header-main .app-edu-mobile_menu .app-edu-mobile_menu_close {
+  color: #d60606;
+  cursor: pointer;
+  top: 15px;
+  left: 15px;
+  font-size: 20px;
+  position: absolute;
+}
+
+/*---------------------------------------------------- */
+/*Banner area*/
+/*----------------------------------------------------*/
+@keyframes UpdownMoving {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes UpdownMoving {
+  0% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(-1px);
+  }
+}
+@keyframes UpdownMoving {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+.app-edu-banner-section {
+  padding: 330px 0px 360px;
+}
+
+.app-edu-banner-text {
+  max-width: 530px;
+  color: #fff;
+}
+.app-edu-banner-text h1 {
+  font-size: 70px;
+  font-weight: 700;
+  padding-bottom: 25px;
+}
+.app-edu-banner-text p {
+  color: #fff;
+  font-size: 24px;
+  padding-bottom: 40px;
+}
+.app-edu-banner-text .banner-btn {
+  width: 200px;
+  height: 65px;
+  font-weight: 700;
+  line-height: 65px;
+  display: inline-block;
+  font-family: "Poppins";
+  border-radius: 45px;
+  background-size: 200%, 1px;
+  transition: all 200ms linear 0ms;
+  background-image: linear-gradient(90deg, #9851fe 0%, #e77fff 50%, #9851fe);
+}
+.app-edu-banner-text .banner-btn:hover {
+  background-position: 120%;
+}
+
+.app-edu-banner-img {
+  top: -130px;
+  right: -110px;
+  position: absolute;
+  animation: UpdownMoving 2s infinite alternate;
+}
+
+/*---------------------------------------------------- */
+/*Intro area*/
+/*----------------------------------------------------*/
+.app-edu-intro-content {
+  padding-top: 90px;
+}
+.app-edu-intro-content .col-lg-4:nth-child(2) .app-edu-intro-innerbox .app-edu-intro-icon {
+  background: linear-gradient(-45deg, #fc409a 0%, #ff8917 100%);
+}
+.app-edu-intro-content .col-lg-4:nth-child(3) .app-edu-intro-innerbox .app-edu-intro-icon {
+  background: linear-gradient(-45deg, #1053fa 0%, #7197ec 100%);
+}
+
+.app-edu-intro-innerbox .app-edu-intro-icon {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  line-height: 95px;
+  border-radius: 100%;
+  margin-bottom: 45px;
+  transition: 0.6s cubic-bezier(0.24, 0.74, 0.58, 1);
+  background: linear-gradient(-45deg, #aa00f1 0%, #6722d6 100%);
+}
+.app-edu-intro-innerbox .app-edu-intro-icon i {
+  color: #fff;
+  font-size: 35px;
+}
+.app-edu-intro-innerbox .app-edu-intro-text h3 {
+  color: #111111;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.app-edu-intro-innerbox:hover .app-edu-intro-icon {
+  transform: rotateY(360deg);
+}
+
+/*---------------------------------------------------- */
+/*about area*/
+/*----------------------------------------------------*/
+.app-edu-about-section {
+  overflow: visible;
+  padding: 190px 0px;
+}
+.app-edu-about-section .app-edu-about-img {
+  left: -80px;
+  position: relative;
+  animation: UpdownMoving 2s infinite alternate;
+}
+.app-edu-about-section .app-edu-about-shape {
+  left: 0;
+  top: -20px;
+}
+.app-edu-about-section .app-edu-about-shape2 {
+  right: 0;
+  bottom: -220px;
+}
+
+.app-edu-about-text {
+  padding-top: 140px;
+}
+
+.app-edu-about-list {
+  margin-top: 25px;
+}
+.app-edu-about-list li {
+  padding-left: 40px;
+  margin-bottom: 8px;
+  position: relative;
+}
+.app-edu-about-list li:before {
+  top: 0;
+  left: 0;
+  content: "";
+  font-weight: 900;
+  color: #930ce8;
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+}
+
+/*---------------------------------------------------- */
+/*course area*/
+/*----------------------------------------------------*/
+.app-edu-course-content {
+  padding: 40px 0px 80px;
+}
+
+.app-edu-course-innerbox {
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 370px;
+  margin-bottom: 40px;
+  transition: 500ms all ease;
+}
+.app-edu-course-innerbox .app-edu-course-img {
+  overflow: hidden;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.app-edu-course-innerbox .app-edu-course-text {
+  padding: 30px;
+  border: 1px solid #d0d0d0;
+  border-top: none;
+  transition: 500ms all ease;
+}
+.app-edu-course-innerbox .app-edu-course-text .course-cat {
+  left: 0;
+  right: 0;
+  top: -18px;
+  color: #fff;
+  height: 35px;
+  width: 160px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 35px;
+  position: absolute;
+  border-radius: 30px;
+  display: inline-block;
+  background: linear-gradient(40deg, #aa00f1 0%, #6722d6 100%);
+}
+.app-edu-course-innerbox .app-edu-course-text h3 {
+  color: #000000;
+  font-size: 21px;
+  font-weight: 700;
+}
+.app-edu-course-innerbox .app-edu-course-text .app-edu-course-rate-price {
+  padding-top: 10px;
+}
+.app-edu-course-innerbox .app-edu-course-text .app-edu-course-rate {
+  padding-top: 5px;
+}
+.app-edu-course-innerbox .app-edu-course-text .app-edu-course-rate li {
+  float: left;
+  color: #fcbc46;
+  font-size: 15px;
+  margin-right: 3px;
+}
+.app-edu-course-innerbox .app-edu-course-text .app-edu-course-rate p {
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 8px;
+}
+.app-edu-course-innerbox .app-edu-course-text .app-edu-course-rate p span {
+  color: #999999;
+  font-size: 14px;
+}
+.app-edu-course-innerbox .app-edu-course-text .app-edu-course-price span {
+  color: #fc819d;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Poppins";
+}
+.app-edu-course-innerbox:hover {
+  transform: translateY(-20px);
+  box-shadow: 0px 5px 70px 0px rgba(0, 0, 0, 0.08);
+}
+.app-edu-course-innerbox:hover .app-edu-course-text {
+  border: 1px solid #fff;
+  border-top: none;
+}
+
+/*---------------------------------------------------- */
+/*Category area*/
+/*----------------------------------------------------*/
+.app-edu-category-section {
+  padding: 110px 0px 90px;
+}
+.app-edu-category-section .app-edu-section-title h2, .app-edu-category-section .app-edu-section-title p, .app-edu-category-section .app-edu-section-title span {
+  color: #fff;
+}
+
+.app-edu-category-innerbox {
+  margin-bottom: 30px;
+  overflow: hidden;
+  z-index: 1;
+  border-radius: 15px;
+  padding: 45px 20px 40px;
+  background-color: #fff;
+}
+.app-edu-category-innerbox:before {
+  top: 0;
+  left: 0;
+  width: 0%;
+  z-index: -1;
+  height: 100%;
+  content: "";
+  position: absolute;
+  transition: 500ms all ease;
+  background: linear-gradient(-40deg, #aa00f1 0%, #6722d6 100%);
+}
+.app-edu-category-innerbox .app-edu-category-icon {
+  line-height: 1;
+  padding-bottom: 10px;
+}
+.app-edu-category-innerbox .app-edu-category-icon i {
+  font-size: 50px;
+  background: linear-gradient(-40deg, #aa00f1 0%, #6722d6 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.app-edu-category-innerbox .app-edu-category-text h3 {
+  color: #111111;
+  font-size: 21px;
+  font-weight: 700;
+  transition: 500ms all ease;
+}
+.app-edu-category-innerbox .app-edu-category-text span {
+  color: #999999;
+  font-size: 14px;
+  transition: 500ms all ease;
+}
+.app-edu-category-innerbox:hover:before {
+  width: 100%;
+}
+.app-edu-category-innerbox:hover .app-edu-category-icon i {
+  background: linear-gradient(37deg, #fff 0%, #fff 100%) !important;
+  -webkit-background-clip: text !important;
+  -moz-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+.app-edu-category-innerbox:hover .app-edu-category-text h3, .app-edu-category-innerbox:hover .app-edu-category-text span {
+  color: #fff;
+}
+
+.app-edu-category-content {
+  padding-top: 65px;
+}
+.app-edu-category-content .col-lg-3:nth-child(2) .app-edu-category-innerbox:before {
+  background: linear-gradient(37deg, #f27109 0%, #ffd223 100%);
+}
+.app-edu-category-content .col-lg-3:nth-child(2) .app-edu-category-innerbox .app-edu-category-icon i {
+  background: linear-gradient(37deg, #f27109 0%, #ffd223 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.app-edu-category-content .col-lg-3:nth-child(3) .app-edu-category-innerbox:before {
+  background: linear-gradient(30deg, #a9bef5 0%, #6a94ed 100%);
+}
+.app-edu-category-content .col-lg-3:nth-child(3) .app-edu-category-innerbox .app-edu-category-icon i {
+  background: linear-gradient(30deg, #a9bef5 0%, #6a94ed 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.app-edu-category-content .col-lg-3:nth-child(4) .app-edu-category-innerbox:before {
+  background: linear-gradient(37deg, #b871ff 0%, #e77fff 100%);
+}
+.app-edu-category-content .col-lg-3:nth-child(4) .app-edu-category-innerbox .app-edu-category-icon i {
+  background: linear-gradient(37deg, #b871ff 0%, #e77fff 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.app-edu-category-content .col-lg-3:nth-child(5) .app-edu-category-innerbox:before {
+  background: linear-gradient(37deg, #8e61fd 0%, #33aeac 100%);
+}
+.app-edu-category-content .col-lg-3:nth-child(5) .app-edu-category-innerbox .app-edu-category-icon i {
+  background: linear-gradient(37deg, #8e61fd 0%, #33aeac 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.app-edu-category-content .col-lg-3:nth-child(6) .app-edu-category-innerbox:before {
+  background: linear-gradient(48deg, #5d1942 0%, #0997ac 100%);
+}
+.app-edu-category-content .col-lg-3:nth-child(6) .app-edu-category-innerbox .app-edu-category-icon i {
+  background: linear-gradient(48deg, #5d1942 0%, #0997ac 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.app-edu-category-content .col-lg-3:nth-child(7) .app-edu-category-innerbox:before {
+  background: linear-gradient(37deg, #5b1942 0%, #e52d5f 100%);
+}
+.app-edu-category-content .col-lg-3:nth-child(7) .app-edu-category-innerbox .app-edu-category-icon i {
+  background: linear-gradient(37deg, #5b1942 0%, #e52d5f 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.app-edu-category-content .col-lg-3:nth-child(8) .app-edu-category-innerbox:before {
+  background: linear-gradient(37deg, #234377 0%, #0491c1 100%);
+}
+.app-edu-category-content .col-lg-3:nth-child(8) .app-edu-category-innerbox .app-edu-category-icon i {
+  background: linear-gradient(37deg, #234377 0%, #0491c1 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*---------------------------------------------------- */
+/*testimonial area*/
+/*----------------------------------------------------*/
+.app-edu-testimonial-section {
+  padding: 115px 0px;
+  z-index: 1;
+}
+.app-edu-testimonial-section .app-edu-testimonial-shape {
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.app-edu-testimonial-content {
+  padding-top: 90px;
+}
+.app-edu-testimonial-content .app-edu-testimonial-btn {
+  margin-top: 30px;
+}
+.app-edu-testimonial-content .app-edu-testimonial-btn a {
+  height: 50px;
+  width: 145px;
+  color: #000000;
+  font-weight: 700;
+  line-height: 48px;
+  font-size: 16px;
+  border-radius: 30px;
+  font-family: "Poppins";
+  display: inline-block;
+  border: 1px solid #d0d0d0;
+  transition: 500ms all ease;
+}
+.app-edu-testimonial-content .app-edu-testimonial-btn a:hover {
+  color: #fff;
+  background-color: #32acb1;
+  border: 1px solid #32acb1;
+}
+
+.app-edu-testimonial-innerbox {
+  padding: 45px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  box-shadow: 0px 5px 42px 0px rgba(0, 0, 0, 0.1);
+}
+.app-edu-testimonial-innerbox .app-edu-testimonial-img {
+  width: 84px;
+  height: 84px;
+  overflow: hidden;
+  margin-right: 25px;
+  border-radius: 100%;
+  padding-bottom: 30px;
+}
+.app-edu-testimonial-innerbox .app-edu-testimonial-author-text {
+  padding-top: 10px;
+}
+.app-edu-testimonial-innerbox .app-edu-testimonial-author-text h3 {
+  color: #111111;
+  font-size: 24px;
+  font-weight: 700;
+}
+.app-edu-testimonial-innerbox .app-edu-testimonial-author-text span {
+  color: #373a5b;
+}
+.app-edu-testimonial-innerbox .app-edu-testimonial-text {
+  padding-top: 25px;
+}
+.app-edu-testimonial-innerbox .app-edu-testimonial-text p {
+  font-size: 24px;
+}
+.app-edu-testimonial-innerbox .app-edu-testimonial-text .app-edu-testimonial-rate {
+  margin-top: 25px;
+}
+.app-edu-testimonial-innerbox .app-edu-testimonial-text .app-edu-testimonial-rate li {
+  color: #fcbc46;
+  font-size: 21px;
+}
+.app-edu-testimonial-innerbox .app-edu-testimonial-text .app-edu-testimonial-rate span {
+  font-size: 21px;
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+/*---------------------------------------------------- */
+/*counter area*/
+/*----------------------------------------------------*/
+.app-edu-counter-section {
+  padding: 110px 0px 95px;
+  background: linear-gradient(45deg, #aa00f1 0%, #6722d6 100%);
+}
+
+.app-edu-counter-content .col-lg-4:last-child .app-edu-counter-innerbox:after {
+  display: none;
+}
+
+.app-edu-counter-innerbox .app-edu-counter-icon {
+  color: #fff;
+  font-size: 55px;
+  margin-right: 30px;
+}
+.app-edu-counter-innerbox .app-edu-counter-text {
+  color: #fff;
+}
+.app-edu-counter-innerbox .app-edu-counter-text h3 {
+  font-size: 72px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+.app-edu-counter-innerbox .app-edu-counter-text h4 {
+  font-size: 24px;
+  font-weight: 700;
+  max-width: 140px;
+}
+.app-edu-counter-innerbox:after {
+  right: 0;
+  top: 15px;
+  width: 1px;
+  content: "";
+  height: 60px;
+  position: absolute;
+  background-color: #c97ff4;
+}
+
+/*---------------------------------------------------- */
+/*blog area*/
+/*----------------------------------------------------*/
+.app-edu-blog-section {
+  overflow: visible;
+  padding: 115px 0px 20px;
+}
+.app-edu-blog-section .app-edu-blog-vector {
+  right: 0;
+  bottom: -390px;
+}
+
+.app-edu-blog-content {
+  padding-top: 58px;
+}
+
+.app-edu-blog-btn {
+  margin-top: 30px;
+  display: inline-block;
+}
+.app-edu-blog-btn a {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Poppins";
+  position: relative;
+}
+.app-edu-blog-btn a:before {
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  content: "";
+  position: absolute;
+  transition: 500ms all ease;
+  background: linear-gradient(40deg, #aa00f1 0%, #6722d6 100%);
+}
+.app-edu-blog-btn a:hover:before {
+  width: 100%;
+}
+
+.app-edu-blog-innerbox {
+  padding: 45px;
+  overflow: hidden;
+  border: 1px solid #d0d0d0;
+  margin-bottom: 30px;
+}
+.app-edu-blog-innerbox .app-edu-blog-img {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 500ms all ease;
+}
+.app-edu-blog-innerbox .app-edu-blog-img:after {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.app-edu-blog-innerbox .app-edu-blog-text {
+  z-index: 1;
+  position: relative;
+}
+.app-edu-blog-innerbox .app-edu-blog-text .blog-ath {
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 20px;
+  font-family: "Poppins";
+  transition: 500ms all ease;
+}
+.app-edu-blog-innerbox .app-edu-blog-text .blog-date {
+  color: #999999;
+  font-size: 16px;
+  transition: 500ms all ease;
+}
+.app-edu-blog-innerbox .app-edu-blog-text h3 {
+  color: #000000;
+  font-size: 21px;
+  font-weight: 700;
+  padding-top: 10px;
+  line-height: 1.6;
+  transition: 500ms all ease;
+}
+.app-edu-blog-innerbox:hover .app-edu-blog-img {
+  opacity: 1;
+  visibility: visible;
+}
+.app-edu-blog-innerbox:hover .app-edu-blog-text .blog-ath,
+.app-edu-blog-innerbox:hover .app-edu-blog-text .blog-date,
+.app-edu-blog-innerbox:hover .app-edu-blog-text h3 {
+  color: #fff;
+}
+
+/*---------------------------------------------------- */
+/*footer area*/
+/*----------------------------------------------------*/
+.app-edu-footer-section {
+  padding-top: 400px;
+}
+
+.app-edu-footer-newslatter {
+  padding-bottom: 95px;
+  border-bottom: 1px solid #fff;
+}
+.app-edu-footer-newslatter .app-edu-section-title {
+  max-width: 515px;
+}
+.app-edu-footer-newslatter .app-edu-section-title span, .app-edu-footer-newslatter .app-edu-section-title h2, .app-edu-footer-newslatter .app-edu-section-title p {
+  color: #fff;
+}
+.app-edu-footer-newslatter .app-edu-newslatter-form {
+  overflow: hidden;
+  margin-top: 90px;
+  border-radius: 10px;
+}
+.app-edu-footer-newslatter .app-edu-newslatter-form input {
+  width: 100%;
+  height: 75px;
+  border: none;
+  padding-left: 20px;
+  background-color: #fff;
+}
+.app-edu-footer-newslatter .app-edu-newslatter-form button {
+  top: 0;
+  right: 0;
+  color: #fff;
+  border: none;
+  height: 75px;
+  width: 200px;
+  font-size: 16px;
+  font-weight: 700;
+  position: absolute;
+  font-family: "Poppins";
+  background: linear-gradient(-36deg, #b16fff 0%, #e980ff 100%);
+}
+
+.app-edu-footer-widget-area {
+  padding: 85px 0px 150px;
+}
+
+.app-edu-footer-widget .widget-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 25px 0px 35px;
+}
+.app-edu-footer-widget .app-edu-logo-widget {
+  max-width: 370px;
+}
+.app-edu-footer-widget .app-edu-logo-widget .app-edu-footer-logo {
+  padding-bottom: 40px;
+}
+.app-edu-footer-widget .app-edu-logo-widget p {
+  color: #fff;
+  padding-bottom: 30px;
+}
+.app-edu-footer-widget .app-edu-logo-widget .app-edu-footer-social a {
+  width: 48px;
+  height: 48px;
+  color: #3b5998;
+  line-height: 48px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: #ffffff;
+  transition: 500ms all ease;
+}
+.app-edu-footer-widget .app-edu-logo-widget .app-edu-footer-social a:hover {
+  color: #fff;
+  background-color: #3b5998;
+}
+.app-edu-footer-widget .app-edu-logo-widget .app-edu-footer-social a:nth-child(2) {
+  color: #1da1f2;
+}
+.app-edu-footer-widget .app-edu-logo-widget .app-edu-footer-social a:nth-child(2):hover {
+  color: #fff;
+  background-color: #1da1f2;
+}
+.app-edu-footer-widget .app-edu-logo-widget .app-edu-footer-social a:nth-child(3) {
+  color: #405de6;
+}
+.app-edu-footer-widget .app-edu-logo-widget .app-edu-footer-social a:nth-child(3):hover {
+  color: #fff;
+  background-color: #405de6;
+}
+.app-edu-footer-widget .app-edu-logo-widget .app-edu-footer-social a:nth-child(4) {
+  color: #0077b5;
+}
+.app-edu-footer-widget .app-edu-logo-widget .app-edu-footer-social a:nth-child(4):hover {
+  color: #fff;
+  background-color: #0077b5;
+}
+.app-edu-footer-widget .app-edu-footer-menu li {
+  margin-bottom: 20px;
+  transition: 500ms all ease;
+}
+.app-edu-footer-widget .app-edu-footer-menu li a {
+  color: #fff;
+}
+.app-edu-footer-widget .app-edu-footer-menu li:hover {
+  padding-left: 10px;
+}
+.app-edu-footer-widget .app-edu-twitter-content {
+  margin-bottom: 25px;
+}
+.app-edu-footer-widget .app-edu-twitter-content .app-edu-twitter-icon {
+  margin-right: 28px;
+}
+.app-edu-footer-widget .app-edu-twitter-content .app-edu-twitter-icon i {
+  color: #fff;
+}
+.app-edu-footer-widget .app-edu-twitter-content .app-edu-twitter-text {
+  overflow: hidden;
+}
+.app-edu-footer-widget .app-edu-twitter-content .app-edu-twitter-text p {
+  color: #fff;
+}
+.app-edu-footer-widget .app-edu-twitter-content .app-edu-twitter-text p a {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.app-edu-footer-copyright {
+  color: #fff;
+  padding-bottom: 85px;
+}
+.app-edu-footer-copyright .copyright-text a {
+  font-weight: 700;
+}
+.app-edu-footer-copyright .copyright-menu li {
+  margin-left: 35px;
+}
+
+/*---------------------------------------------------- */
+/*Respondsive area*/
+/*----------------------------------------------------*/
+@media screen and (max-width: 1440px) {
+  .app-edu-banner-img {
+    right: -65px;
+  }
+
+  .app-edu-about-section .app-edu-about-shape {
+    left: -155px;
+  }
+
+  .app-edu-about-section .app-edu-about-shape2 {
+    display: none;
+  }
+
+  .app-edu-blog-section .app-edu-blog-vector {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .app-edu-counter-innerbox .app-edu-counter-text h3 {
+    font-size: 50px;
+  }
+
+  .app-edu-counter-innerbox .app-edu-counter-icon {
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .app-edu-banner-section {
+    padding: 230px 0px 260px;
+  }
+
+  .app-edu-banner-img {
+    position: static;
+    text-align: center;
+  }
+
+  .app-edu-banner-text {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .app-edu-about-section .app-edu-about-img {
+    left: 0;
+  }
+
+  .app-edu-section-title h2 {
+    font-size: 35px;
+  }
+
+  .app-edu-about-section {
+    padding-top: 50px;
+  }
+
+  .app-edu-course-innerbox .app-edu-course-text {
+    padding: 30px 15px;
+  }
+
+  .app-edu-counter-innerbox .app-edu-counter-icon {
+    font-size: 36px;
+    margin-right: 15px;
+  }
+
+  .app-edu-counter-innerbox .app-edu-counter-text h3 {
+    font-size: 36px;
+    margin-right: 10px;
+  }
+
+  .app-edu-counter-innerbox .app-edu-counter-text h4 {
+    font-size: 18px;
+  }
+
+  .app-edu-counter-innerbox:after {
+    top: -5px;
+    height: 40px;
+  }
+
+  .app-edu-footer-widget .widget-title {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .app-edu-header-main {
+    padding-top: 20px;
+  }
+  .app-edu-header-main.app-edu-sticky-on {
+    padding-top: 10px;
+  }
+
+  .app-edu-logo {
+    width: 120px;
+  }
+
+  .app-edu-blog-section {
+    padding-bottom: 80px;
+  }
+
+  .app-edu-intro-innerbox {
+    margin-bottom: 40px;
+  }
+
+  .app-edu-about-section .app-edu-about-shape,
+.app-edu-testimonial-section .app-edu-testimonial-shape,
+.app-edu-blog-section .app-edu-blog-vector {
+    display: none;
+  }
+
+  .app-edu-about-img {
+    text-align: center;
+  }
+
+  .app-edu-footer-section {
+    padding-top: 80px;
+    background-image: linear-gradient(90deg, #5fbec1 0%, #66c2c1 50%, #7dd5b1 100%) !important;
+  }
+
+  .app-edu-main-navigation {
+    display: none;
+  }
+
+  .header-dia-cta-btn a {
+    height: 44px;
+    width: 130px;
+    font-size: 14px;
+    line-height: 40px;
+    margin-left: 30px;
+    margin-right: 50px;
+  }
+
+  .app-edu-about-section {
+    padding: 50px 0px;
+  }
+
+  .app-edu-counter-innerbox {
+    margin-bottom: 30px;
+  }
+
+  .app-edu-counter-innerbox:after {
+    display: none;
+  }
+
+  .app-edu-footer-copyright .copyright-menu li {
+    margin-left: 10px;
+  }
+
+  .app-edu-header-main .app-edu-mobile_menu_button {
+    display: block;
+  }
+}
+@media screen and (max-width: 767px) {
+  .copyright-menu,
+.copyright-text {
+    float: none !important;
+  }
+
+  .app-edu-footer-copyright .copyright-menu li {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .app-edu {
+    font-size: 16px;
+  }
+
+  .app-edu-banner-text h1 {
+    font-size: 36px;
+  }
+
+  .app-edu-banner-text p {
+    font-size: 20px;
+  }
+
+  .app-edu-banner-text .banner-btn {
+    height: 50px;
+    width: 150px;
+    line-height: 50px;
+  }
+
+  .app-edu-banner-section {
+    padding: 150px 0px 50px;
+  }
+
+  .app-edu-intro-content {
+    padding-top: 50px;
+  }
+
+  .app-edu-about-text {
+    padding-top: 40px;
+  }
+
+  .app-edu-section-title h2 {
+    font-size: 28px;
+  }
+
+  .app-edu-section-title h2 {
+    padding-bottom: 20px;
+  }
+
+  .app-edu-course-content {
+    padding: 40px 0px 30px;
+  }
+
+  .app-edu-category-section {
+    padding: 50px 0px 40px;
+  }
+
+  .app-edu-testimonial-section {
+    padding: 50px 0px;
+  }
+
+  .app-edu-testimonial-content {
+    padding-top: 40px;
+  }
+
+  .app-edu-testimonial-innerbox .app-edu-testimonial-text p {
+    font-size: 18px;
+  }
+
+  .app-edu-testimonial-innerbox .app-edu-testimonial-author-text h3 {
+    font-size: 20px;
+  }
+
+  .app-edu-counter-section {
+    padding: 50px 0px 30px;
+  }
+
+  .app-edu-blog-section {
+    padding: 50px 0px;
+  }
+
+  .app-edu-footer-newslatter .app-edu-newslatter-form button {
+    width: 120px;
+    height: 45px;
+  }
+
+  .app-edu-footer-newslatter .app-edu-newslatter-form input {
+    height: 45px;
+  }
+
+  .app-edu-footer-newslatter .app-edu-newslatter-form {
+    margin-top: 30px;
+  }
+
+  .app-edu-footer-newslatter {
+    padding-bottom: 60px;
+  }
+
+  .app-edu-footer-widget-area {
+    padding: 50px 0px 30px;
+  }
+
+  .app-edu-intro-innerbox .app-edu-intro-icon {
+    margin-bottom: 20px;
+  }
+}
+/*---------------------------------------------------- */

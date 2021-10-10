@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("../fonts-11/flaticon.ttf?6b4d409587c6aa60d38d679ee3279f0f") format("truetype"),
+url("../fonts-11/flaticon.woff?6b4d409587c6aa60d38d679ee3279f0f") format("woff"),
+url("../fonts-11/flaticon.woff2?6b4d409587c6aa60d38d679ee3279f0f") format("woff2"),
+url("../fonts-11/flaticon.eot?6b4d409587c6aa60d38d679ee3279f0f#iefix") format("embedded-opentype"),
+url("../fonts-11/flaticon.svg?6b4d409587c6aa60d38d679ee3279f0f#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-menu:before {
+    content: "\f101";
+}
+.flaticon-right-arrow:before {
+    content: "\f102";
+}
+.flaticon-fast-forward:before {
+    content: "\f103";
+}
+.flaticon-bank:before {
+    content: "\f104";
+}
+.flaticon-phone-call:before {
+    content: "\f105";
+}
+.flaticon-team:before {
+    content: "\f106";
+}
+.flaticon-left-arrow:before {
+    content: "\f107";
+}
+.flaticon-customer:before {
+    content: "\f108";
+}
+.flaticon-add:before {
+    content: "\f109";
+}
+.flaticon-idea:before {
+    content: "\f10a";
+}
+.flaticon-project-management:before {
+    content: "\f10b";
+}
+.flaticon-link:before {
+    content: "\f10c";
+}
+.flaticon-home:before {
+    content: "\f10d";
+}
+.flaticon-tax:before {
+    content: "\f10e";
+}
+.flaticon-investment:before {
+    content: "\f10f";
+}
+.flaticon-bank-1:before {
+    content: "\f110";
+}
+.flaticon-menu-1:before {
+    content: "\f111";
+}
+.flaticon-ui:before {
+    content: "\f112";
+}
+.flaticon-design:before {
+    content: "\f113";
+}
+.flaticon-concept:before {
+    content: "\f114";
+}
+.flaticon-app:before {
+    content: "\f115";
+}
+.flaticon-projects:before {
+    content: "\f116";
+}
+.flaticon-planet-earth:before {
+    content: "\f117";
+}
+.flaticon-team-1:before {
+    content: "\f118";
+}
+.flaticon-happy:before {
+    content: "\f119";
+}
+.flaticon-download:before {
+    content: "\f11a";
+}
+.flaticon-customize:before {
+    content: "\f11b";
+}
+.flaticon-ux-design:before {
+    content: "\f11c";
+}
+.flaticon-responsive-design:before {
+    content: "\f11d";
+}

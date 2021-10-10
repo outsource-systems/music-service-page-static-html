@@ -1,0 +1,311 @@
+.dark-version .feature-eight-section,
+.dark-version .eg-fun-fact-section,
+.dark-version .eg-how-work-section,
+.dark-version .ei-appdownload-section,
+.dark-version .ei-team-section,
+.dark-version .ei-faq-section,
+.dark-version .ei-screenshots-section,
+.dark-version .ei-testimonial-section,
+.dark-version  .ei-partner-section,
+.dark-version .ei-footer-section,
+.dark-version .saas_two_service_section,
+.dark-version .saas_two_feature_section,
+.dark-version .saas_two_team_section,
+.dark-version .s2-pricing_section {
+	background-color: #0F0034;
+}
+.dark-version .eight-section-title .eg-title-tag,
+.dark-version .eight-section-title h2 {
+	color: #fff;
+}
+.dark-version .eight-section-title p {
+	color: #C4C4C4;
+}
+.dark-version .feature-eight-section .eight-feature-box { 
+	background-color: #24144A;
+}
+.dark-version .feature-eight-section .eight-feature-box .feature-text8 h3 {
+	color: #fff;
+}
+.dark-version .feature-eight-section .eight-feature-box .feature-text8 p {
+	color: #C4C4C4;
+}
+.dark-version .feature-eight-section .eight-feature-box .feature-icon8 .ei-icon-bg {
+	background-color: #3A256C;
+}
+.dark-version .eight-service-section {
+	background-color: #0F0034;
+}
+.dark-version .eight-service-section .s-shape-bg2 {
+	display: none;
+}
+.dark-version  .ei-service-icon-text .ei-service-text h3,
+.dark-version .eg-fun-fact-section .eg-funfact-text .fun-fact-counter .eg-counter-number p,
+.dark-version .eg-how-work-section .ei-how-work-content-item .eg-how-work-icon-text .eg-how-work-text h3,
+.dark-version .ei-team-section .ei-team-pic-text .ei-team-text h3,
+.dark-version .ei-faq-section .ei-faq-queans .ei-faq-header button,
+.dark-version .ei-testimonial-section .ei-testimonial-img-text .ei-testimonial-text .ei-testimonial-name h3,
+.dark-version  .ei-partner-text h4,
+.dark-version .ei-footer-widget .ei-widget-title,
+.dark-version .ei-footer-widget h4,
+.dark-version  .saas_two_banner_section .s2-banner_content h1,
+.dark-version .saas_two_banner_section .s2-banner_content .banner_btn a,
+.dark-version  .saas_two_main_header .s2-main-navigation .navbar-nav li a,
+.dark-version .saas_two_section_title h2, .saas_two_banner_section .s2-banner_content h1,
+.dark-version .saas_two_about_section .s2-about_text_icon .s2-about_text h3, 
+.dark-version .saas_two_feature_section .s2-feature_text h2, 
+.dark-version .integration_section .integration_text h2,
+.dark-version .saas_two_team_section .s2-team_img_text .s2_name_info h3,
+.dark-version  .saas_two_service_section .service_content_box .service_text_box h3,
+.dark-version  .saas_two_feature_section .s2-feature_right .s2-feature_list .s2-feature_text_box h3,
+.dark-version .saas_two_feature_section .s2-feature_text .saas_btn a,
+.dark-version .s2-faq_section .s2_faq_content button,
+.dark-version .s2-pricing_section .s2-pricing_item .s2-pricing_btn a,
+.dark-version .dia-banner-section .dia-banner-content h1,
+.dark-version .dia-main-header .dia-main-navigation li a,
+.dark-version .dia-section-title h2,
+.dark-version .dia-service-section .dia-service-details .dia-service-item h3,
+.dark-version .dia-service-section .dia-service-details .dia-service-item li,
+.dark-version .dia-service-section .dia-service-review .dia-service-rate-text,
+.dark-version  .dia-fun-fact-section .dia-fun-fact-title h2,
+.dark-version .dia-fun-fact-section .dia-fun-fact-item .fun-fact-number span,
+.dark-version .dia-portfolio-img-text .dia-portfolio-text h3,
+.dark-version .dia-team-section .dia-team-pic-text .dia-team-text h3,
+.dark-version .dia-testimonial_text,
+.dark-version .dia-testimonial-section .carousel-inner .dia-testimonial_meta h4,
+.dark-version .dia-blog-section .dia-blog-img-text .dia-blog-text h3,
+.dark-version .dia-newslatter-section .dia-newslatter-content .dia-newslatter-text h3,
+.dark-version .dia-footer-widget .dia-widget-title,
+.dark-version .str-section-title h2,
+.dark-version  .str-feature-section .str-feature-icon-text .str-feature-text h3,
+.dark-version .str-about-section .str-about-content .str-about-textarea,
+.dark-version .str-about-section .str-about-content .str-about-list li,
+.dark-version .str-work-process-section .str-work-icon-text .str-work-text h3,
+.dark-version .str-work-process-section .str-work-icon-text .str-work-text .str-btn,
+.dark-version .str-work-process-section .str-work-icon-text .str-work-icon i,
+.dark-version .str-testimonial_content .str-testimonial_text h4,
+.dark-version .str-testimonial_name_designation .str-testimonial_meta h4,
+.dark-version .str-testimonial_name_designation .str-testimonial_meta p,
+.dark-version .str-newslatter-content .str-newslatter-text h2,
+.dark-version .str-team-img-text .str-team-text h4,
+.dark-version .str-get-in-touch-section .str-get-touch-icon-text .str-get-touch-text h3,
+.dark-version .str-footer-area .footer-content .str-footer-widget .str-widget-title {
+	color: #fff;
+}
+.dark-version .ei-service-icon-text .ei-service-text p,
+.dark-version .eg-how-work-section .ei-how-work-content-item .eg-how-work-icon-text .eg-how-work-text p,
+.dark-version  .ei-team-section .ei-team-pic-text .ei-team-text p,
+.dark-version .ei-faq-section .ei-faq-content .ei-title-faq p,
+.dark-version .ei-faq-section .ei-faq-queans .ei-faq .ei-faq-body,
+.dark-version .ei-testimonial-section .ei-testimonial-img-text .ei-testimonial-text p,
+.dark-version .ei-partner-text p,
+.dark-version .ei-footer-widget p,
+.dark-version .ei-footer-widget ul li a,
+.dark-version  .ei-copyright-text p,
+.dark-version  .ei-footer-copyright .ei-copyright-menu a,
+.dark-version .saas_two_banner_section .s2-banner_content p,
+.dark-version .saas_two_banner_section .s2-banner_content .banner_btn span,
+.dark-version .saas_two_service_section .service_content_box .service_text_box p,
+.dark-version .saas_two_about_section .s2-about_text_icon .s2-about_text p,
+.dark-version .saas_two_feature_section .s2-feature_text p, 
+.dark-version .integration_section .integration_text p,
+.dark-version  .saas_two_feature_section .s2-feature_right .s2-feature_list .s2-feature_text_box p,
+.dark-version .s2-faq_section .s2_faq_content .s2_faq .s2_faq-body,
+.dark-version .dia-banner-section .dia-banner-content p,
+.dark-version .dia-fun-fact-section .dia-fun-fact-item p,
+.dark-version .dia-about-content .dia-about-text,
+.dark-version .dia-about-content .dia-about-list li,
+.dark-version  .dia-exp-section .dio-exp-text-area .dia-about-text,
+.dark-version  .dia-exp-section .skill-progress-bar .skill-set-percent h4,
+.dark-version .dia-portfolio-img-text .dia-portfolio-text span,
+.dark-version .dia-section-title p,
+.dark-version .dia-team-section .dia-team-pic-text .dia-team-text p,
+.dark-version .dia-testimonial-section .carousel-inner .dia-testimonial_meta p,
+.dark-version .dia-newslatter-section .dia-newslatter-content .dia-newslatter-text p,
+.dark-version .dia-newslatter-section .dia-newslatter-content .dia-newslatter-form .dia-newslatter-checkbox label,
+.dark-version .dia-footer-widget p,
+.dark-version .dia-footer-widget ul li a,
+.dark-version .dia-footer-copyright .dia-copyright-menu a,
+.dark-version .dia-copyright-text p,
+.dark-version .str-get-touch-text span {
+	color: #C4C4C4;
+}
+.dark-version .ei-service-icon-text .ei-service-icon {
+	background-color: #3A256C;
+}
+.dark-version .eg-how-work-section .ei-how-work-content-item .eg-how-work-icon-text {
+	background-color: #3A256C;
+}
+.dark-version .eg-how-work-section .ei-how-work-content-item .eg-how-work-icon-text .scroller-no {
+	color: #ce90f4;
+}
+.dark-version .eg-how-work-section .ei-how-work-content-item .mCSB_scrollTools .mCSB_draggerRail {
+	background-color: #382b57;
+}
+.dark-version .ei-appdownloaad-shape {
+	opacity: .2;
+}
+.dark-version .ei-team-section .ei-team-pic-text .ei-team-img:after { 
+	background-image: linear-gradient(180deg, #A11B1B00 0%, #F2295B00 100%);
+	border-color: #2968FF;
+}
+.dark-version .ei-faq-section .ei-faq-queans .ei-faq.faq_bg {
+	background-color: #24144a;
+}
+.dark-version .ei-faq-section .fq-shape-style6 {
+	opacity: .2;
+}
+.dark-version .ei-testimonial-section .ei-testimonial-img-text {
+	background-color: #0F0034;
+}
+.dark-version .ei-testimonial-section .ei-testimonial-img-text .test--quote-icon i {
+	color: #3c4658;
+}
+.dark-version .ei-footer-copyright .ei-footer-copyright-content {
+	border-top: 2px solid #2a2f3d;
+}
+/*** Dark Home 2 ***/
+.dark-version .saas_two_banner_section {
+	background-color: #1B0234;
+}
+.dark-version .saas_two_main_header,
+.dark-version .saas_two_feature_section .s2-feature_right .s2-feature_list {
+	background-color: #090012;
+}
+.dark-version .saas_two_service_section .service_content_box::after {
+	background-color: #2c0345;
+}
+.dark-version .saas_two_service_section .service_content_box .service_icon_box .upper_icon svg {
+	fill: #acacac;
+}
+.dark-version .saas_two_about_section,
+.dark-version  .integration_section {
+	background-color:  #000;
+}
+.dark-version .saas_two_team_section .s2-team_img_text .s2_name_info .s2-designation {
+	color: #cc0fda;
+}
+.dark-version .s2-faq_section:after {
+	background-image: url(../img/dark-img/cfd.png);
+}
+.dark-version .s2-faq_section {
+	background-color: #000;
+}
+.dark-version .s2-pricing_section .s2-pricing_item {
+	background-color: #1F003E;
+}
+.dark-version .s2-pricing_section .s2-pricing_item .s2-pricing_list li {
+	color: #fff;
+	border: none;
+}
+.saas-classic.dark-version {
+	background: #1b0234;
+}
+.dark-version .dia-banner-section,
+.dark-version .dia-service-section,
+.dark-version  .dia-fun-fact-section,
+.dark-version .dia-about-section,
+.dark-version .dia-exp-section,
+.dark-version .dia-portfolio-section,
+.dark-version .dia-team-section,
+.dark-version .dia-testimonial-section,
+.dark-version  .dia-blog-section,
+.dark-version .dia-footer-section {
+	background-color: #050017; 
+}
+.dark-version .dia-main-header .dia-main-navigation {
+	background-color: rgba(5,0,23,0.73);
+}
+.dark-version .dia-banner-section .banner-side-img {
+	z-index: 0
+}
+.dark-version .dia-sticky-menu {
+	background-color: #000;
+}
+.dark-version .dia-team-section .dia-team-pic-text .dia-team-img:after {
+	display: none;
+}
+.dark-version .dia-testimonial-section .carousel-inner .carousel-item {
+	background-color: #170D3D;
+}
+.dark-version .dia-testimonial-section .dia-testimonial_slider-area .test-shape1,
+.dark-version .dia-testimonial-section .dia-testimonial_slider-area .test-shape2 {
+	z-index: 0;
+}
+.dark-version .dia-newslatter-section {
+	background-color: #170D3D;
+}
+.dark-version .dia-newslatter-section .dia-newslatter-content {
+	background-color: #000;
+}
+.dark-version .dia-footer-copyright .dia-footer-copyright-content {
+	border-top: 2px solid #242937;
+}
+.dark-version .str-banner-section,
+.dark-version .str-feature-section,
+.dark-version .str-work-process-section,
+.dark-version .str-portfolio-section,
+.dark-version .str-testimonial_section,
+.dark-version .str-blog-section,
+.dark-version .str-footer-area {
+	background-color: #000;
+}
+.dark-version .str-section-title .str-title-tag {
+	color: #0a71db;
+}
+.dark-version .str-feature-section .str-feature-icon-text {
+	background-color: #102A45
+}
+.dark-version.str-home {
+	color: #9E9C9C;
+}
+.dark-version .str-about-section {
+	background-color: #03111F;
+}
+.dark-version .str-about-section .str-aboutbg1,
+.dark-version .str-about-section .str-aboutbg2,
+.dark-version .str-about-section .str-aboutbg3 {
+	opacity: .3;
+}
+.dark-version .str-portfolio-section:after {
+	background-color: #121212;
+}
+.dark-version .str-testimonial_indicator {
+	background-image: url(../img/dark-img/test-dbg.png);
+}
+.dark-version .str-testimonial_section .str-tst-vector {
+	opacity: .3;
+}
+.dark-version .str-partner-section,
+.dark-version .str-newslatter-section,
+.dark-version .str-team-section  {
+	background-color: #1e1e1e;
+}
+.dark-version .str-newslatter-content:before {
+	background-color: #1e1e1e;
+}
+.dark-version .str-newslatter-content .str-newslatter-text p {
+	color: #f7f7f7;
+}
+.dark-version .str-newslatter-content .str-newslatter-form input {
+	background-color: #000;
+}
+.dark-version .str-newslatter-content .str-mail-icon {
+	opacity: .5;
+}
+.dark-version .str-team-img-text .str-team-text {
+	background-color: #000;
+}
+.dark-version .str-team-text span {
+	color: #148eff;
+	-webkit-text-fill-color: inherit;
+}
+.dark-version .str-get-in-touch-section {
+	background-color: #1e1e1e;
+}
+.dark-version .str-get-in-touch-section .str-get-touch-icon-text {
+    border: 1px solid #535460;
+}
+.dark-version .str-footer-area .footer-content .str-footer-widget .str-newslatter-widget button {
+	background-color: #505050;
+}
