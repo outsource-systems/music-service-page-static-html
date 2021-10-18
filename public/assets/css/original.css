@@ -52,10 +52,6 @@
   color: red;
 }
 
-.ei-service-icon .fas {
-    line-height: 108px;
-}
-
 .document-section h3, .document-section h4 {
     font-weight: bold;
 }
@@ -99,6 +95,16 @@
 
 .admin-screan-content {
     height: 600px;
+}
+
+.ei-service-icon i {
+    line-height: 108px;
+  }
+
+@media screen and (max-width: 407px) {
+    .ei-service-icon i {
+      line-height: 80px;
+    }
 }
 
 @media screen and (max-width: 767px) {
