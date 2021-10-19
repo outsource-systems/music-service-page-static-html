@@ -33,27 +33,40 @@
   </header>
 
   <section class="container mt-5 pt-5 original-form-section">
+    
     <h3>資料請求</h3>
-    <form class="mt-5 pt-5 mb-5 pb-5 px-5 bg-light original-form">
-      　<div class="mb-3">
-        <label for="name" class="form-label">名前 *</label>
-        <input type="text" class="form-control" id="name" required>
+    <form class="mt-5 pt-5 mb-5 pb-5 px-5 bg-light original-form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+      
+      <input type=hidden name="oid" value="00D5h0000017gNO">
+      <input type=hidden name="retURL" value="https://origify.app/thanks.html">
+    
+      <div class="mb-3">
+        <label for="first_name" class="form-label">名 *</label>
+        <input type="text" class="form-control" id="first_name" name="first_name" required>
+      </div>
+      <div class="mb-3">
+        <label for="last_name" class="form-label">姓 *</label>
+        <input type="text" class="form-control" id="last_name" name="last_name" required>
       </div>
       <div class="mb-3">
         <label for="email" class="form-label">メールアドレス *</label>
-        <input type="email" class="form-control" id="email">
+        <input type="email" class="form-control" id="email" name="email" required>
       </div>
       <div class="mb-3">
-        <label for="" class="form-label">電話番号</label>
-        <input type="tel" class="form-control" id="">
+        <label for="company">会社名</label>
+        <input type="text" class="form-control" id="company" name="company">
       </div>
       <div class="mb-3">
-        <label for="" class="form-label">所属会社名</label>
-        <input type="text" class="form-control" id="">
+        <label for="city" class="form-label">市区郡</label>
+        <input type="text" class="form-control" id="city" name="city">
       </div>
       <div class="mb-3">
-        <label for="" class="form-label">ウェブサイトURL</label>
-        <input type="url" class="form-control" id="">
+        <label for="state" class="form-label">都道府県</label>
+        <input type="text" class="form-control" id="state" name="state">
+      </div>
+      <div class="mb-3">
+        <label for="url" class="form-label">Web サイト</label>
+        <input type="url" class="form-control" id="url" name="url">
       </div>
       <p>
         <small>入力いただいたメールアドレスに資料を送信します</small>
